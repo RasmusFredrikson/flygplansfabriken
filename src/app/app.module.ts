@@ -10,6 +10,7 @@ import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {AppRoutes} from './app.routes';
+import { ToggleDirective } from './shared/toggle.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {AppRoutes} from './app.routes';
     YourTenantComponent,
     TelefonplanComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ToggleDirective
   ],
   imports: [
     BrowserModule,
