@@ -4,14 +4,14 @@
       <img src="assets/logo.png" alt="Bulma: a modern CSS framework based on Flexbox">
     </a>
 
-    <div class="burger navbar-burger">
+    <div class="burger navbar-burger" (click)="showMenu = !showMenu">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
 
-  <div class="navbar-menu">
+  <div class="navbar-menu" [class.is-active]="showMenu">
     <div class="navbar-end">
       <a class="navbar-item" routerLink="/hem" routerLinkActive="is-active">
         Hem

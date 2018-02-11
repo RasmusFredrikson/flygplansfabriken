@@ -10,7 +10,7 @@ import {TelefonplanComponent} from './telefonplan/telefonplan.component';
 const APP_ROUTES: Routes = [
   {
     path: '',
-    redirectTo: 'Hem',
+    redirectTo: 'hem',
     pathMatch: 'full'
   },
   {
