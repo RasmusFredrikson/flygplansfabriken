@@ -1,3 +1,2 @@
-@import '../node_modules/bulma/sass/utilities/initial-variables';
-//$footer-background-color: $grey-dark;
-@import '../node_modules/bulma/bulma';
+@import "./scss/variable-overrides";
+@import '../node_modules/bootstrap/scss/bootstrap';

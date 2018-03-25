@@ -11,6 +11,14 @@ import {HomeComponent} from './home/home.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {AppRoutes} from './app.routes';
 import { ToggleDirective } from './shared/toggle.directive';
+import { AndrahandsuthyrningComponent } from './your-apartment/andrahandsuthyrning/andrahandsuthyrning.component';
+import { ForandringComponent } from './your-apartment/forandring/forandring.component';
+import { FelanmalanComponent } from './your-apartment/felanmalan/felanmalan.component';
+import { ParkeringComponent } from './your-apartment/parkering/parkering.component';
+import { TrivselComponent } from './your-apartment/trivsel/trivsel.component';
+import { UnderhallComponent } from './your-apartment/underhall/underhall.component';
+import { MaklareComponent } from './maklare/maklare.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +30,15 @@ import { ToggleDirective } from './shared/toggle.directive';
     TelefonplanComponent,
     HomeComponent,
     NotFoundComponent,
-    ToggleDirective
+    ToggleDirective,
+    AndrahandsuthyrningComponent,
+    ForandringComponent,
+    FelanmalanComponent,
+    ParkeringComponent,
+    TrivselComponent,
+    UnderhallComponent,
+    MaklareComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,

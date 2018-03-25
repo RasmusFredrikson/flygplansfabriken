@@ -1,91 +1,78 @@
-<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="javascript:void(0)">
-      <img src="assets/logo.png" alt="Bulma: a modern CSS framework based on Flexbox">
-    </a>
-
-    <div class="burger navbar-burger" (click)="showMenu = !showMenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-menu-darkest">
+  <a class="navbar-brand" href="#">
+    <img src="assets/logo.png" alt="Flygplansfabriken">
+  </a>
+  <div class="navbar-toggler" data-toggle="collapse" data-target="#burgerToggle" aria-controls="burgerToggle"
+       aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
   </div>
 
-  <div class="navbar-menu" [class.is-active]="showMenu">
-    <div class="navbar-end">
-      <a class="navbar-item" routerLink="/hem" routerLinkActive="is-active">
-        Hem
-      </a>
-      <a class="navbar-item" routerLink="/faq" routerLinkActive="is-active">
-        FAQ
-      </a>
-      <a class="navbar-item" routerLink="/nyheter" routerLinkActive="is-active">
-        Nyheter
-      </a>
-      <a class="navbar-item has-dropdown" appToggle="is-active">
-        <a class="navbar-link">
+  <!-- Top navigations -->
+  <div class="collapse navbar-collapse" id="burgerToggle">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/hem">Hem</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/faq">FAQ</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/maklare">För Mäklare</a>
+      </li>
+      <!--<li class="nav-item" routerLinkActive="active">-->
+        <!--<a class="nav-link" routerLink="/nyheter">Nyheter</a>-->
+      <!--</li>-->
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="omDittBoende" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Om ditt boende
         </a>
-
-        <div class="navbar-dropdown is-right">
-          <a class="navbar-item">
+        <div class="dropdown-menu" aria-labelledby="omDittBoende">
+          <a class="dropdown-item" href="javascript:void(0)" routerLinkActive="active" routerLink="ditt-boende/andrahandsuthyrning">
             Andrahands uthyrning
           </a>
-          <a class="navbar-item">
+          <a class="dropdown-item" href="javascript:void(0)" routerLinkActive="active" routerLink="ditt-boende/forandring">
             Ansöka ändring i bostad
           </a>
-          <a class="navbar-item">
+          <a class="dropdown-item" href="javascript:void(0)" routerLinkActive="active" routerLink="ditt-boende/felanmalan">
             Gör en fel anmälan
           </a>
-          <a class="navbar-item">
+          <a class="dropdown-item" href="javascript:void(0)" routerLinkActive="active" routerLink="ditt-boende/parkering">
             Parkering & Garage
           </a>
-          <a class="navbar-item">
+          <a class="dropdown-item" href="javascript:void(0)" routerLinkActive="active" routerLink="ditt-boende/trivsel">
             Trivselsregler
           </a>
-          <a class="navbar-item">
+          <a class="dropdown-item" href="javascript:void(0)" routerLinkActive="active" routerLink="ditt-boende/underhallansvar">
             Underhållsansvar
           </a>
         </div>
-      </a>
-      <a class="navbar-item has-dropdown" appToggle="is-active">
-        <a class="navbar-link">
-          Om Föreningen
-        </a>
+      </li>
 
-        <div class="navbar-dropdown is-right">
-          <a class="navbar-item">
-            Ekonomi
-          </a>
-          <a class="navbar-item">
-            Kontaktuppgifter
-          </a>
-          <a class="navbar-item">
-            Stadgar
-          </a>
-          <a class="navbar-item">
-            Stämmor
-          </a>
-          <a class="navbar-item">
+      <li class="nav-item dropdown" routerLinkActive="active">
+        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="omForeningen" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Om föreningen
+        </a>
+        <div class="dropdown-menu" aria-labelledby="omForeningen">
+          <a class="dropdown-item" routerLinkActive="active" href="javascript:void(0)" routerLink="om-foreningen">
             Styrelsen
           </a>
+          <a class="dropdown-item" routerLinkActive="active" href="javascript:void(0)" routerLink="/contacts">
+            Kontaktuppgifter
+          </a>
+          <a class="dropdown-item"routerLinkActive="active" href="javascript:void(0)">
+            Stadgar
+          </a>
         </div>
-      </a>
-      <a class="navbar-item" routerLink="/om-telefonplan" routerLinkActive="is-active">
-        Om Telefonplan
-      </a>
-    </div>
+      </li>
+
+      <!--<li class="nav-item" routerLinkActive="active">-->
+        <!--<a class="nav-link" routerLink="/om-telefonplan">-->
+          <!--Om Telefonplan-->
+        <!--</a>-->
+      <!--</li>-->
+    </ul>
   </div>
 </nav>
-
 <router-outlet></router-outlet>
-
-<!--<footer class="footer">-->
-  <!--<div class="container">-->
-    <!--<div class="content has-text-centered">-->
-      <!--<p>-->
-        <!--<strong>Flygplansfabriken</strong> by <a>Quang Vu</a>-->
-      <!--</p>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</footer>-->
