@@ -1,2 +1,29 @@
 @import "./scss/variable-overrides";
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+.card-header {
+  background-color: $menu-dark;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 0 10px 0 darken($border-color, 10%);
+}
+
+.container{
+  @extend .py-4
+}
+
+.dropdown-item {
+  background-color: $menu-darkest;
+  color: $gray-500;
+
+  &:hover {
+    background-color: $menu-dark;
+    color: $gray-500;
+  }
+}
+
+.dropdown-menu {
+  background-color: $menu-darker;
+}
