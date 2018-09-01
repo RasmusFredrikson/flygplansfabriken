@@ -19,6 +19,7 @@ import { TrivselComponent } from './your-apartment/trivsel/trivsel.component';
 import { UnderhallComponent } from './your-apartment/underhall/underhall.component';
 import { MaklareComponent } from './maklare/maklare.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { StadgarComponent } from './stadgar/stadgar.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     TrivselComponent,
     UnderhallComponent,
     MaklareComponent,
-    ContactsComponent
+    ContactsComponent,
+    StadgarComponent
   ],
   imports: [
     BrowserModule,

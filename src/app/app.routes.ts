@@ -14,6 +14,7 @@ import {TrivselComponent} from './your-apartment/trivsel/trivsel.component';
 import {UnderhallComponent} from './your-apartment/underhall/underhall.component';
 import {MaklareComponent} from './maklare/maklare.component';
 import {ContactsComponent} from './contacts/contacts.component';
+import {StadgarComponent} from './stadgar/stadgar.component';
 
 const APP_ROUTES: Routes = [
   {
@@ -78,6 +79,10 @@ const APP_ROUTES: Routes = [
   {
     path: 'contacts',
     component: ContactsComponent
+  },
+  {
+    path: 'stadgar',
+    component: StadgarComponent
   },
   {
     path: '**',
