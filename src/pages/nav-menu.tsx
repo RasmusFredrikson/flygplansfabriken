@@ -1,8 +1,23 @@
-import React, {forwardRef, useMemo, useState} from 'react';
-import {ButtonBase, ButtonProps, ClickAwayListener, List, ListItem, ListItemText, Paper, Popper, styled} from '@material-ui/core';
+import React, {forwardRef, Fragment, useMemo, useState} from 'react';
+import {
+  Box,
+  ButtonBase,
+  ButtonProps,
+  ClickAwayListener,
+  Collapse,
+  Drawer,
+  List,
+  ListItem,
+  ListItemProps,
+  ListItemText,
+  Paper,
+  Popper,
+  styled
+} from '@material-ui/core';
 import {useHistory, useRouteMatch} from 'react-router';
 import {AnimatePresence} from 'framer-motion';
 import {SlideDown} from '../animation/slide-down';
+import {ExpandLess, ExpandMore} from '@material-ui/icons';
 
 interface IMenu {
   name: string;
@@ -55,6 +70,60 @@ export const NavMenu = ({name, path, subMenu = []}: IMenu) => {
   );
 };
 
+interface IMobileMenu {
+  isOpen?: boolean;
+  onClose?: () => void;
+  menus: IMenu[];
+}
+
+export const MobileMenu = ({isOpen, onClose, menus}: IMobileMenu) => {
+  return (
+    <Drawer anchor={'right'} open={isOpen} onClose={onClose}>
+      <List>
+        {menus.map(m => (
+          <Fragment key={m.name}>
+            {!m.subMenu?.length && (
+              <ListLink {...m}/>
+            )}
+
+            <NestedMobileMenus name={m.name} subMenu={m.subMenu} onSelected={onClose}/>
+          </Fragment>
+        ))}
+      </List>
+    </Drawer>
+  );
+};
+
+interface INestedMobileMenus {
+  name: string;
+  subMenu?: IMenu[];
+  onSelected?: () => void;
+}
+
+const NestedMobileMenus = ({name, subMenu = [], onSelected}: INestedMobileMenus) => {
+  const match = useRouteMatch(subMenu.map(sm => sm.path).filter(Boolean) as string[]);
+  const [expanded, setExpanded] = useState(!!match);
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+  }
+
+  return subMenu?.length ? (
+    <>
+      <ListItem button onClick={toggleExpand}>
+        <ListItemText>{name}</ListItemText>
+        <Box paddingLeft={4}>{expanded ? <ExpandLess/> : <ExpandMore/>}</Box>
+      </ListItem>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <List disablePadding>
+          {subMenu.map(sm => (
+            <ListLink key={sm.path} style={{paddingLeft: "2rem"}} {...sm} onClick={onSelected}/>
+          ))}
+        </List>
+      </Collapse>
+    </>
+  ) : null;
+};
+
 interface IMenuProps extends ButtonProps {
   isActive?: boolean;
 }
@@ -84,11 +153,11 @@ export const SingleLink = ({name, path = "NOT MATCH"}: IMenu) => {
   </MenuLink>;
 };
 
-interface IListLinkProps extends IMenu {
+interface IListLinkProps extends IMenu, ListItemProps {
   onClick?: () => void;
 }
 
-const ListLink = ({name, path = "NOT MATCH", onClick}: IListLinkProps) => {
+const ListLink = ({name, path = "NOT MATCH", onClick, ...rest}: IListLinkProps) => {
   const isActive = useRouteMatch(path);
   const history = useHistory();
 
@@ -103,7 +172,7 @@ const ListLink = ({name, path = "NOT MATCH", onClick}: IListLinkProps) => {
   };
 
   return (
-    <ListItem button selected={!!isActive} onClick={go}>
+    <ListItem button selected={!!isActive} onClick={go} {...rest as any}>
       <ListItemText>
         {name}
       </ListItemText>

@@ -1,23 +1,7 @@
 import React, {useState} from 'react';
-import {
-  AppBar,
-  Avatar,
-  Box,
-  Container,
-  Divider,
-  Drawer,
-  Hidden,
-  IconButton,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Toolbar,
-  Typography,
-  useTheme
-} from '@material-ui/core';
-import {Inbox, Mail, Menu} from '@material-ui/icons';
-import {NavMenu, SingleLink} from './nav-menu';
+import {AppBar, Avatar, Box, Container, Hidden, IconButton, Toolbar, Typography, useTheme} from '@material-ui/core';
+import {Menu} from '@material-ui/icons';
+import {MobileMenu, NavMenu, SingleLink} from './nav-menu';
 
 export const AppMenu = () => {
   const theme = useTheme();
@@ -77,25 +61,46 @@ export const AppMenu = () => {
               </IconButton>
             </Hidden>
 
-            <Drawer anchor={'right'} open={openMobileMenu} onClose={() => setMobileMenu(false)}>
-              <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                  <ListItem button key={text}>
-                    <ListItemIcon>{index % 2 === 0 ? <Inbox/> : <Mail/>}</ListItemIcon>
-                    <ListItemText primary={text}/>
-                  </ListItem>
-                ))}
-              </List>
-              <Divider/>
-              <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                  <ListItem button key={text}>
-                    <ListItemIcon>{index % 2 === 0 ? <Inbox/> : <Mail/>}</ListItemIcon>
-                    <ListItemText primary={text}/>
-                  </ListItem>
-                ))}
-              </List>
-            </Drawer>
+            <MobileMenu
+              menus={[
+                {name: "Hem", path: "/hem"},
+                {name: "Mäklarinformation", path: "/maklarinformation"},
+                {
+                  name: "Boendeinformation", subMenu: [{
+                    name: "Andrahandsuthyrning",
+                    path: "/boendeinformation/andrahandsuthyrning"
+                  }, {
+                    name: "Parkering",
+                    path: "/boendeinformation/parkering"
+                  }, {
+                    name: "teknik",
+                    path: "/boendeinformation/teknik"
+                  }, {
+                    name: "Förändring i lgh",
+                    path: "/boendeinformation/forandring-i-lgh"
+                  }, {
+                    name: "Trivselregler",
+                    path: "/boendeinformation/trivselregler"
+                  }, {
+                    name: "Underhållsansvar",
+                    path: "/boendeinformation/underhallsansvar"
+                  }]
+                },
+                {name: "Felanmälan", path: "/felanmalan"},
+                {
+                  name: "styrelsen", subMenu: [{
+                    name: "Styrelsemedlemmar",
+                    path: "/styrelsen/medlemmar"
+                  }, {
+                    name: "Dokument",
+                    path: "/styrelsen/document"
+                  }]
+                },
+                {name: "Kontakt", path: "/kontakt"}
+              ]}
+              isOpen={openMobileMenu}
+              onClose={() => setMobileMenu(false)}
+            />
           </Box>
         </Toolbar>
       </Container>
