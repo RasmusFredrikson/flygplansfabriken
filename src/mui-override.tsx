@@ -70,6 +70,9 @@ export const MuiOverride = responsiveFontSizes(createMuiTheme({
     MuiMenu: {
       elevation: 1,
     },
+    MuiLink: {
+      color: "secondary"
+    }
   },
   overrides: {
     MuiGrid: {

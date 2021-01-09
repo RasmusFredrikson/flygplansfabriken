@@ -47,3 +47,12 @@ export const Hr = () => {
     </>
   );
 };
+
+export const Warn = ({children}: PropsWithChildren<any>) => {
+  return (
+    <Typography variant={"body1"} color={'error'} paragraph>
+      {children}
+    </Typography>
+  );
+};
+

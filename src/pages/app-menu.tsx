@@ -37,7 +37,27 @@ export const AppMenu = () => {
             <Hidden smDown>
               <SingleLink path="/hem" name="Hem"/>
               <SingleLink path="/maklarinformation" name="Mäklarinformation"/>
-              <SingleLink path="/boendeinformation" name="Boendeinformation"/>
+              <NavMenu name="Boendeinformation" subMenu={[
+                {
+                  name: "Andrahandsuthyrning",
+                  path: "/boendeinformation/andrahandsuthyrning"
+                }, {
+                  name: "Parkering",
+                  path: "/boendeinformation/parkering"
+                }, {
+                  name: "teknik",
+                  path: "/boendeinformation/teknik"
+                }, {
+                  name: "Förändring i lgh",
+                  path: "/boendeinformation/forandring-i-lgh"
+                }, {
+                  name: "Trivselregler",
+                  path: "/boendeinformation/trivselregler"
+                }, {
+                  name: "Underhållsansvar",
+                  path: "/boendeinformation/underhallsansvar"
+                }
+              ]}/>
               <SingleLink path="/felanmalan" name="Felanmälan"/>
 
               <NavMenu name="styrelsen" subMenu={[{

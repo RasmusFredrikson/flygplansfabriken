@@ -50,7 +50,9 @@
   },
   "elevator": {
     "name": "Hissen AB",
-    "phone": "08-61 84 84 8"
+    "phone": [{
+      "number": "08-61 84 84 8"
+    }]
   },
   "broadband": {
     "name": "Bahnhof AB",
@@ -60,6 +62,8 @@
   },
   "lockService": {
     "name": "Roséns Låsservice AB",
-    "phone": "070-788 48 09"
+    "phone": [{
+      "number": "070-788 48 09"
+    }]
   }
 }

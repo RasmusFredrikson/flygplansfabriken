@@ -4,7 +4,6 @@ import {useHistory, useRouteMatch} from 'react-router';
 import {AnimatePresence} from 'framer-motion';
 import {SlideDown} from '../animation/slide-down';
 
-
 interface IMenu {
   name: string;
   path?: string;
@@ -19,6 +18,10 @@ export const NavMenu = ({name, path, subMenu = []}: IMenu) => {
   const isActive = useMemo(() => {
     return match;
   }, [match, path]);
+
+  const closeMenu = () => {
+    setOpenSubmenu(false);
+  };
 
   return (
     <ClickAwayListener onClickAway={() => setOpenSubmenu(false)}>
@@ -39,7 +42,7 @@ export const NavMenu = ({name, path, subMenu = []}: IMenu) => {
                 <Paper>
                   <List>
                     {subMenu?.map(sm => (
-                      <ListLink key={sm.path} {...sm}/>
+                      <ListLink key={sm.path} {...sm} onClick={closeMenu}/>
                     ))}
                   </List>
                 </Paper>
@@ -81,13 +84,21 @@ export const SingleLink = ({name, path = "NOT MATCH"}: IMenu) => {
   </MenuLink>;
 };
 
-const ListLink = ({name, path = "NOT MATCH"}: IMenu) => {
+interface IListLinkProps extends IMenu {
+  onClick?: () => void;
+}
+
+const ListLink = ({name, path = "NOT MATCH", onClick}: IListLinkProps) => {
   const isActive = useRouteMatch(path);
   const history = useHistory();
 
   const go = () => {
     if (path && !isActive) {
       history.push(path);
+    }
+
+    if (onClick) {
+      onClick();
     }
   };
 
