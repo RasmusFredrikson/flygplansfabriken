@@ -83,7 +83,7 @@ export const MobileMenu = ({isOpen, onClose, menus}: IMobileMenu) => {
         {menus.map(m => (
           <Fragment key={m.name}>
             {!m.subMenu?.length && (
-              <ListLink {...m}/>
+              <ListLink {...m} onClick={onClose}/>
             )}
 
             <NestedMobileMenus name={m.name} subMenu={m.subMenu} onSelected={onClose}/>
