@@ -70,13 +70,18 @@ module.exports = (env, argv) => {
           use: ["@svgr/webpack", 'url-loader'],
         },
         {
-          test: /\.(bmp|mp3|mp4|ogg|wav|eot|ttf|woff|woff2)$/,
+          test: /\.(bmp|mp3|mp4|ogg|wav|eot|ttf|woff|woff2|pdf)$/,
           loader: "file-loader",
           options: {
             outputPath: "assets",
           },
         },
       ],
+    },
+    optimization: {
+      splitChunks: {
+        chunks: "all"
+      }
     },
 
     plugins: [

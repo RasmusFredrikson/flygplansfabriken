@@ -1,6 +1,7 @@
 import React from 'react';
 import {Heading, Hr, PageContainer, Paragraph, SubHeading, Warn} from '../page-container';
 import {Link} from '@material-ui/core';
+import bredband from "../../assets/bredband-tv.pdf"
 
 export const Teknik = () => {
   return (
@@ -14,7 +15,7 @@ export const Teknik = () => {
       </SubHeading>
 
       <Paragraph>
-        Bredband 1000/1000 Mbit/s ingår i hyran. Klicka <Link href="../../assets/bredband-tv.pdf">här</Link> för mer information om hur du
+        Bredband 1000/1000 Mbit/s ingår i hyran. Klicka <Link href={bredband}>här</Link> för mer information om hur du
         kan komma igång med Bahnhof bredband.
         <br/><br/>
         IT-delen av skåpet innehåller en inkommande nätverksport avsedd för uppkoppling mot router för användning efter egen önskan, samt

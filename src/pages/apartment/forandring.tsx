@@ -3,6 +3,7 @@ import {Heading, Hr, PageContainer, Paragraph, SubHeading} from '../page-contain
 import {LinkTo} from '../contacts/contact-card';
 import contacts from "../contacts/contacts.json";
 import {Link, Typography} from '@material-ui/core';
+import bostadsandring from "../../assets/bostadsandring.pdf"
 
 export const Forandring = () => {
   return (
@@ -45,7 +46,7 @@ export const Forandring = () => {
       </SubHeading>
 
       <Paragraph>
-        För att ansöka om att ändringar av din bostad behöver du fylla i <Link href="../../assets/bostadsandring.pdf">Ansökan om tillstånd
+        För att ansöka om att ändringar av din bostad behöver du fylla i <Link href={bostadsandring}>Ansökan om tillstånd
         för ändring i bostadsrättslägenhet</Link>. Ansökan
         skickas till <LinkTo type={'Mail'}>{contacts.styrelsen.email}</LinkTo>
         <br/><br/>

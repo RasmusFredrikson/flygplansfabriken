@@ -8,6 +8,12 @@ declare module "*.jpg" {
   export default value;
 }
 
+declare module "*.pdf" {
+  const value: any;
+  export default value;
+  export const ReactComponent: any;
+}
+
 declare module "*.svg" {
   const value: any;
   export default value;

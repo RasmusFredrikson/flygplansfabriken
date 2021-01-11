@@ -2,6 +2,7 @@ import React from 'react';
 import {Heading, Hr, PageContainer, Paragraph, SubHeading, Warn} from '../page-container';
 import {Link} from '@material-ui/core';
 import {LinkTo} from '../contacts/contact-card';
+import andrahand from "../../assets/andrahand.pdf";
 
 export const Andrahandsuthyrning = () => {
   return (
@@ -21,7 +22,7 @@ export const Andrahandsuthyrning = () => {
       </SubHeading>
 
       <Paragraph>
-        För att ansöka om att hyra ut din bostad i andra hand behöver du fylla i <Link href="../../assets/andrahand.pdf">ansökningsblankett</Link>.
+        För att ansöka om att hyra ut din bostad i andra hand behöver du fylla i <Link href={andrahand}>ansökningsblankett</Link>.
         <br/><br/>
         Blanketten mailas därefter till <LinkTo type={'Mail'}>andrahand@brf-flygplansfabriken.se</LinkTo>. Godkänd uthyrningstid är max ett år. Handläggningstiden är ca 30
         dagar.

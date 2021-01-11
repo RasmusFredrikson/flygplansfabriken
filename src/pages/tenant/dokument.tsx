@@ -1,6 +1,12 @@
 import React from 'react';
 import {Heading, Hr, PageContainer, Paragraph, SubHeading} from '../page-container';
 import {Box, Link} from '@material-ui/core';
+import stadgar2019 from "../../assets/stadgar2019.pdf";
+import ar2019 from "../../assets/2019.pdf"
+import ar2018 from "../../assets/2017-2018.pdf";
+import ar2017 from "../../assets/2016-2017.pdf";
+import andrahand from "../../assets/andrahand.pdf"
+import bostadsandring from "../../assets/bostadsandring.pdf"
 
 export const Dokument = () => {
   return (
@@ -16,7 +22,7 @@ export const Dokument = () => {
       </SubHeading>
 
       <Paragraph>
-        <Link href="../../assets/stadgar2019.pdf">Stadgar.pdf</Link>
+        <Link href={stadgar2019}>Stadgar.pdf</Link>
       </Paragraph>
 
       <Hr/>
@@ -26,15 +32,15 @@ export const Dokument = () => {
       </SubHeading>
 
       <Paragraph>
-        <Link href="../../assets/2019.pdf">Årsredovisning 2019.pdf</Link>
+        <Link href={ar2019}>Årsredovisning 2019.pdf</Link>
       </Paragraph>
 
       <Paragraph>
-        <Link href="../../assets/2017-2018.pdf">Årsredovisning 2018.pdf</Link>
+        <Link href={ar2018}>Årsredovisning 2018.pdf</Link>
       </Paragraph>
 
       <Paragraph>
-        <Link href="../../assets/2016-2017.pdf">Årsredovisning 2017.pdf</Link>
+        <Link href={ar2017}>Årsredovisning 2017.pdf</Link>
       </Paragraph>
 
       <Hr/>
@@ -44,7 +50,7 @@ export const Dokument = () => {
       </SubHeading>
 
       <Paragraph>
-        <Link href="../../assets/andrahand.pdf">Andrahandsuthyrning.pdf</Link>
+        <Link href={andrahand}>Andrahandsuthyrning.pdf</Link>
       </Paragraph>
 
       <Hr/>
@@ -54,7 +60,7 @@ export const Dokument = () => {
       </SubHeading>
 
       <Paragraph>
-        <Link href="../../assets/bostadsandring.pdf">Bostadsändring.pdf</Link>
+        <Link href={bostadsandring}>Bostadsändring.pdf</Link>
       </Paragraph>
     </PageContainer>
   );
