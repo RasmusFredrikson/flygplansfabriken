@@ -70,7 +70,7 @@ module.exports = (env, argv) => {
           use: ["@svgr/webpack", 'url-loader'],
         },
         {
-          test: /\.(bmp|mp3|mp4|ogg|wav|eot|ttf|woff|woff2|pdf)$/,
+          test: /\.(bmp|mp3|mp4|ogg|wav|eot|ttf|woff|woff2|pdf|ico)$/,
           loader: "file-loader",
           options: {
             outputPath: "assets",
