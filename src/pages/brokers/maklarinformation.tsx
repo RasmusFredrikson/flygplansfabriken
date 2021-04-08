@@ -12,6 +12,8 @@ export const Maklarinformation = () => {
       </SubHeading>
 
       <Paragraph>
+        <b>Ingår i avgiften</b>: Vatten, Internet och värme.
+        <br/>
         <b>Bostadsrättstilläggsförsäkring</b>: Nej
         <br/>
         <b>Tar föreningen ut överlåtelseavgift?</b>: Ja, 2.5 % av prisbasbelopp, betalas av köparen.
@@ -25,8 +27,6 @@ export const Maklarinformation = () => {
         <b>Godkänns juridisk person?</b>: Nej
         <br/>
         <b>Godkänner föreningen delat ägande?</b>: Ja, Minsta ägarandel 10%
-        <br/>
-        <b>När förvärvade föreningen fastigheten?</b>: Byggnaden färdigställd 2015
       </Paragraph>
 
       <Hr/>
@@ -36,15 +36,17 @@ export const Maklarinformation = () => {
       </SubHeading>
 
       <Paragraph>
-        <b>Byggnadsår</b>: 2015-2016
+        <b>Byggnadsår</b>: 2015
         <br/>
-        <b>Uppvärmning</b>:
+        <b>Uppvärmning</b>: Fjärrvärme via radiatorer i lägenheterna.
         <br/>
-        <b>Ventilation</b>:
+        <b>Ventilation</b>: Centralt ventilationsystem.
+        <br/>
+        <b>EL</b>: Bostadsrättsinnehavaren ansvarar själv för elabonnemang.
         <br/>
         <b>Hiss</b>: Ja
         <br/>
-        <b>Gemensamma utrymmen</b>: Lägenhetsförråd,, kombinerat barnvagnsrum och rullstolsrum. Föreningen äger inga lokaler.
+        <b>Gemensamma utrymmen</b>: Lägenhetsförråd, cykelrum samt kombinerat barnvagnsrum och rullstolsrum. Föreningen äger inga lokaler.
         <br/>
         <b>Trappstädning</b>: Ja, av städfirma
       </Paragraph>
@@ -58,7 +60,7 @@ export const Maklarinformation = () => {
       <Paragraph>
         <b>Har föreningen några avgiftsförändringar planerade?</b>: Avgiften förväntas vara oförändrad 2021
         <br/>
-        <b>Kommande renoveringar vi bör känna till?</b>: Nybyggd så inga planerade inom 3-5 år
+        <b>Kommande renoveringar?</b>: Inget planerat
         <br/>
         <b>Nyligen gjorda renoveringar?</b>: Nybyggt
       </Paragraph>

@@ -19,8 +19,8 @@ export const Underhallsansvar = () => {
       </SubHeading>
 
       <Paragraph>
-        Bostadsrättshavaren ska på egen bekostnad till det inre hålla lägenheten jämte tillhörande utrym-men i gott skick. Detta gäller även
-        mark, förråd, altan eller balkong och andra lägenhetskomple-ment som kan ingå i upplåtelsen.
+        Bostadsrättshavaren ska på egen bekostnad till det inre hålla lägenheten jämte tillhörande utrymmen i gott skick. Detta gäller även
+        mark, förråd, altan eller balkong och andra lägenhetskomplement som kan ingå i upplåtelsen.
         <br/><br/>
         <b>Bostadsrättshavaren svarar sålunda för underhåll och reparationer av bland annat.</b>
       </Paragraph>

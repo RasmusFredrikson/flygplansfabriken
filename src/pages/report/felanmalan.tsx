@@ -135,6 +135,20 @@ export const Felanmalan = () => {
         Alla ärende gällande nycklar, kontakta {contacts.lockService.name}.
         <br/>
         Telefon: <LinkTo type={'Tel'}>{contacts.lockService.phone[0].number}</LinkTo>
+        <br/>
+        Email: <LinkTo type={'Mail'}>{contacts.lockService.email}</LinkTo>
+      </Paragraph>
+
+      <Hr/>
+
+      <SubHeading>
+        Felparkerad bil
+      </SubHeading>
+
+      <Paragraph>
+        Kontakta {contacts.parking.name}
+        <br/>
+        Telefon: <LinkTo type={'Tel'}>{contacts.parking.phone[0].number}</LinkTo>
       </Paragraph>
     </PageContainer>
   );

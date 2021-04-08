@@ -1,7 +1,8 @@
 import React from 'react';
 import {Heading, Hr, PageContainer, Paragraph, SubHeading, Warn} from '../page-container';
 import {Link} from '@material-ui/core';
-import bredband from "../../assets/bredband-tv.pdf"
+import bredband from "../../assets/bredband-tv.pdf";
+import contacts from "../contacts/contacts.json";
 
 export const Teknik = () => {
   return (
@@ -38,7 +39,7 @@ export const Teknik = () => {
         I lägenheten finns en kombinerad gruppcentral/IT-skåp med huvudbrytare, automatsäkringar och jordfelsbrytare för hela lägenheten.
         <br/><br/>
         Belysningsarmaturer finns i badrumsskåp och under överskåp i kök (bänkbelysning). I övriga rum är det lamputtag i tak. Underhåll och
-        bytte lampor ansvarar bostadsrättsinnehavare för.
+        byte av lampor ansvarar bostadsrättsinnehavare för.
       </Paragraph>
 
       <Hr/>
@@ -48,17 +49,14 @@ export const Teknik = () => {
       </SubHeading>
 
       <Paragraph>
-        <b>Värnme</b>
+        <b>Värme</b>
         <br/>
-        Ert värmesystem består av vattenburna radiatorer som värms upp centralt med fjärrvärme och där vi har en återvinning på
-        ventilationen.
+        Frånluft sker i köket via fläktkåpan. Denna har ingen egen motor utan är grundinställd från central fläkt och när du ska laga mat
+        vrider du upp donet som gör att flödet ökas. Det är alltså på eller av och inga mellanlägen finns.
         <br/><br/>
-        Radiatorerna styrs centralt så att rätt temperatur uppfylls i lägenheten, på respektive radiator sitter en termostat, den ska stå
-        fullt öppen. Om ni önskar lägre temperatur i rummet så vrider ni ned termostaten lite åt gången och avvaktar.
-        <br/><br/>
-        Termostaten stänger värmetillförseln i radiatorn när det är rätt temperatur i rummet vilket innebär att radiatorerna ofta känns
-        kalla, vilket inte är
-        något fel så länge det är rätt temperatur i rummet.
+        Vid vädring – gör det snabbt och effektivt. Öppna ett fönster eller fönsterdörr på vid gavel under en kortare stund. Ställ inte
+        fönster på glänt under en längre tid. Detta för att spara på värmeenergin i huset.
+
       </Paragraph>
 
       <Paragraph>
@@ -106,6 +104,19 @@ export const Teknik = () => {
         <br/><br/>
         Det finns också mindre avstängningsventiler monterade på flertalet av rören försörjande blandare i din lägenhet. Dessa kan användas
         vid underhåll och reparation av enheterna.
+      </Paragraph>
+
+      <Hr/>
+
+      <SubHeading>
+        AVGIFTER & AVIER
+      </SubHeading>
+
+      <Paragraph>
+        Logga in på mina sidor hos <Link href={contacts.accounting.homepage}>{contacts.accounting.name}</Link>, inloggningsuppgifter hittar
+        du på din avgiftsavi.
+        <br/>
+        På sidan hittar du även blanket för Autogiro.
       </Paragraph>
     </PageContainer>
   );

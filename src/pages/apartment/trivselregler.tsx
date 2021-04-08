@@ -220,7 +220,7 @@ export const Trivselregler = () => {
       <Paragraph>
         Brännbara hushållssopor slängs i föreningens cylinderformade sopbehållare som är placerat vid parkeringsplatserna på framsidan. Alla
         boende har ett gemensamt ansvar att hålla god ordning runt sopkärlet. Kärl för källsortering finns på Tellusborgsvägen 53, en liten
-        promenad in i Midsommarkransen. Återvinningscentraler finns i Östberga eller Högdalen.
+        promenad in i Midsommarkransen. Återvinningscentraler finns i Östberga och Sätra.
       </Paragraph>
 
       <Hr/>
@@ -229,9 +229,12 @@ export const Trivselregler = () => {
       </SubHeading>
 
       <Paragraph>
-        I förråden får personliga tillhörigheter förvaras endast på avsedd plats.
-        Brandfarliga vätskor t.ex. målarfärg, kemikalier eller gastuber får ej förvaras på vind eller i förråden. Gångarna ska hållas fria
-        från saker och får inte belamras. Undvik att förvara stöldbegärlig egendom i källaren. Rökning är förbjuden.
+        I förråden får personliga tillhörigheter förvaras endast på avsedd plats. Brandfarliga vätskor t.ex. målarfärg, kemikalier eller
+        gastuber får ej förvaras i förrådet.
+        <br/><br/>
+        Gångarna ska hållas fria från saker och får inte belamras, två gånger per år erbjuder föreningen grovsopshämtning där du kan slänga
+        allt du vill bli av med.
+        Undvik att förvara stöldbegärlig egendom i källaren. Rökning är förbjuden. Ditt förråd ska alltid vara låst!
       </Paragraph>
 
       <Hr/>
@@ -268,15 +271,6 @@ export const Trivselregler = () => {
       <Paragraph>
         Innehavare av husdjur ska övervaka att dessa inte stör eller förorenar i fastigheten och inte heller rastas i planteringar, på
         gräsmattor eller på barnens lekytor. Plocka upp djurets spillning
-      </Paragraph>
-
-      <Hr/>
-      <SubHeading>
-        Andrahandsuthyrning
-      </SubHeading>
-
-      <Paragraph>
-        Enligt föreningens stadgar eller upplåtelseavtal.
       </Paragraph>
 
       <Hr/>

@@ -45,7 +45,7 @@
   "parking": {
     "name": "Aimo Park",
     "phone": [{
-      "number": "0771-96 90 06"
+      "number": "0771-96 90 00"
     }]
   },
   "elevator": {
@@ -64,6 +64,7 @@
     "name": "Roséns Låsservice AB",
     "phone": [{
       "number": "070-788 48 09"
-    }]
+    }],
+    "email": "info@rosenlas.se"
   }
 }

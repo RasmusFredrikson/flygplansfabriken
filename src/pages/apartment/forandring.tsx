@@ -50,8 +50,6 @@ export const Forandring = () => {
         för ändring i bostadsrättslägenhet</Link>. Ansökan
         skickas till <LinkTo type={'Mail'}>{contacts.styrelsen.email}</LinkTo>
         <br/><br/>
-        Styrelsen får inte vägra att medge tillstånd till en åtgärd som avses i första stycket om inte åt-gärden är till påtaglig skada
-        eller olägenhet för föreningen eller annan medlem. Bostadsrätts-havaren svarar för att erforderliga myndighetstillstånd erhålls.
         Förändringar ska alltid utföras på ett fackmannamässigt sätt.
       </Paragraph>
     </PageContainer>
