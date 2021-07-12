@@ -26,27 +26,13 @@ export const Medlemmar = () => {
           <TableRow>
             <TableCell>
               <Typography>
-                <b>Jesper Persson </b>
+                <b>Peter Andersson</b>
               </Typography>
             </TableCell>
 
             <TableCell>
               <Typography>
                 Ordförande
-              </Typography>
-            </TableCell>
-          </TableRow>
-
-          <TableRow>
-            <TableCell>
-              <Typography>
-                <b>Malin Forsberg </b>
-              </Typography>
-            </TableCell>
-
-            <TableCell>
-              <Typography>
-                Vice Ordförande
               </Typography>
             </TableCell>
           </TableRow>
@@ -89,6 +75,20 @@ export const Medlemmar = () => {
             <TableCell>
               <Typography>
                 Styrelseledamot
+              </Typography>
+            </TableCell>
+          </TableRow>
+
+          <TableRow>
+            <TableCell>
+              <Typography>
+                <b>Linnea Werre </b>
+              </Typography>
+            </TableCell>
+
+            <TableCell>
+              <Typography>
+                Suppleant
               </Typography>
             </TableCell>
           </TableRow>
