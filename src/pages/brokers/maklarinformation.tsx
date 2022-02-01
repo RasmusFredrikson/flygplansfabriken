@@ -14,7 +14,7 @@ export const Maklarinformation = () => {
       <Paragraph>
         <b>Ingår i avgiften</b>: Vatten, Internet och värme.
         <br/>
-        <b>Bostadsrättstilläggsförsäkring</b>: Nej
+        <b>Försäkring, bostadsrättstillägg</b>: Tecknas individuellt av medlemmen
         <br/>
         <b>Tar föreningen ut överlåtelseavgift?</b>: Ja, 2.5 % av prisbasbelopp, betalas av köparen.
         <br/>
@@ -58,7 +58,7 @@ export const Maklarinformation = () => {
       </SubHeading>
 
       <Paragraph>
-        <b>Har föreningen några avgiftsförändringar planerade?</b>: Avgiften förväntas vara oförändrad 2021
+        <b>Har föreningen några avgiftsförändringar planerade?</b>: Avgiften förväntas vara oförändrad 2022
         <br/>
         <b>Kommande renoveringar?</b>: Inget planerat
         <br/>
