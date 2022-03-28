@@ -18,6 +18,8 @@ export const Forandring = () => {
         vägg, dra nya rör i kök och badrum. Ibland kan det också behövas bygglov för att utföra vissa åtgärder i lägenheten. Kontakta alltid
         styrelsen innan Du sätter igång! Tänk också på att ta hänsyn till de omkringboende när Du utför bullerstörande arbeten i lägenheten.
         Dessa bör i första hand utföras under dagtid.
+        <br/><br/>
+        Du ansvararför att sätta upp information i hiss och trapphus för tider för renoveringen.
       </Paragraph>
 
       <Paragraph>

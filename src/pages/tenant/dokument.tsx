@@ -2,6 +2,7 @@ import React from 'react';
 import {Heading, Hr, PageContainer, Paragraph, SubHeading} from '../page-container';
 import {Box, Link} from '@material-ui/core';
 import stadgar2019 from "../../assets/stadgar2019.pdf";
+import ar2021 from "../../assets/2021.pdf"
 import ar2020 from "../../assets/2020.pdf"
 import ar2019 from "../../assets/2019.pdf"
 import ar2018 from "../../assets/2017-2018.pdf";
@@ -31,6 +32,10 @@ export const Dokument = () => {
       <SubHeading>
         Årsredovisningar
       </SubHeading>
+
+      <Paragraph>
+        <Link href={ar2021}>Årsredovisning 2021.pdf</Link>
+      </Paragraph>
 
       <Paragraph>
         <Link href={ar2020}>Årsredovisning 2020.pdf</Link>

@@ -261,6 +261,8 @@ export const Trivselregler = () => {
         <br/><br/>
         Reglerna gäller dygnet runt men är extra angelägna att följa vardagar från kl. 22 på kvällen till kl. 7 på morgonen. Man bör därför
         undvika att köra tvätt- och diskmaskiner under denna tid. Har Du fest så informera gärna grannarna i god tid innan.
+        <br/><br/>
+        Borrning i väggar samt kraftigare störningar får endast urföras måndag - fredag 8:00 - 17:00 samt lördag - söndag 10:00 - 16:00.
       </Paragraph>
 
       <Hr/>
