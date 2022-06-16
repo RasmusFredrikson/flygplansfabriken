@@ -1,134 +1,126 @@
-import React from 'react';
-import {Heading, Hr, PageContainer, Paragraph, SubHeading} from '../page-container';
-import {LinkTo} from '../contacts/contact-card';
+import React from "react";
+import {
+    Heading,
+    Hr,
+    PageContainer,
+    Paragraph,
+    SubHeading,
+} from "../page-container";
+import { LinkTo } from "../contacts/contact-card";
 
 export const Maklarinformation = () => {
-  return (
-    <PageContainer>
-      <Heading>Mäklarinformation</Heading>
-      <br/>
-      <SubHeading>
-        allmänt
-      </SubHeading>
+    return (
+        <PageContainer>
+            <Heading>Mäklarinformation</Heading>
+            <br />
+            <SubHeading>allmänt</SubHeading>
 
-      <Paragraph>
-        <b>Ingår i avgiften</b>: Vatten, Internet och värme.
-        <br/>
-        <b>Försäkring, bostadsrättstillägg</b>: Tecknas individuellt av medlemmen
-        <br/>
-        <b>Tar föreningen ut överlåtelseavgift?</b>: Ja, 2.5 % av prisbasbelopp, betalas av köparen.
-        <br/>
-        <b>Antal lägenheter i föreningen</b>: 73st
-        <br/>
-        <b>Äger föreningen marken?</b>: Ja
-        <br/>
-        <b>Är föreningen äkta eller oäkta?</b>: Äkta, 769617-1052
-        <br/>
-        <b>Godkänns juridisk person?</b>: Nej
-        <br/>
-        <b>Godkänner föreningen delat ägande?</b>: Ja, Minsta ägarandel 10%
-      </Paragraph>
+            <Paragraph>
+                <b>Ingår i avgiften</b>: Vatten, Internet och värme.
+                <br />
+                <b>Försäkring, bostadsrättstillägg</b>: Tecknas individuellt av
+                medlemmen
+                <br />
+                <b>Tar föreningen ut överlåtelseavgift?</b>: Ja, 2.5 % av
+                prisbasbelopp, betalas av köparen.
+                <br />
+                <b>Antal lägenheter i föreningen</b>: 73st
+                <br />
+                <b>Äger föreningen marken?</b>: Ja
+                <br />
+                <b>Är föreningen äkta eller oäkta?</b>: Äkta, 769617-1052
+                <br />
+                <b>Godkänns juridisk person?</b>: Nej
+                <br />
+                <b>Godkänner föreningen delat ägande?</b>: Ja, Minsta ägarandel
+                10%
+            </Paragraph>
 
-      <Hr/>
+            <Hr />
 
-      <SubHeading>
-        Fastigheten
-      </SubHeading>
+            <SubHeading>Fastigheten</SubHeading>
 
-      <Paragraph>
-        <b>Byggnadsår</b>: 2015
-        <br/>
-        <b>Uppvärmning</b>: Fjärrvärme via radiatorer i lägenheterna.
-        <br/>
-        <b>Ventilation</b>: Centralt ventilationsystem.
-        <br/>
-        <b>EL</b>: Bostadsrättsinnehavaren ansvarar själv för elabonnemang.
-        <br/>
-        <b>Hiss</b>: Ja
-        <br/>
-        <b>Gemensamma utrymmen</b>: Lägenhetsförråd, cykelrum samt kombinerat barnvagnsrum och rullstolsrum. Föreningen äger inga lokaler.
-        <br/>
-        <b>Trappstädning</b>: Ja, av städfirma
-      </Paragraph>
+            <Paragraph>
+                <b>Byggnadsår</b>: 2015
+                <br />
+                <b>Uppvärmning</b>: Fjärrvärme via radiatorer i lägenheterna.
+                <br />
+                <b>Ventilation</b>: Centralt ventilationsystem.
+                <br />
+                <b>EL</b>: Bostadsrättsinnehavaren ansvarar själv för
+                elabonnemang.
+                <br />
+                <b>Hiss</b>: Ja
+                <br />
+                <b>Gemensamma utrymmen</b>: Lägenhetsförråd, cykelrum samt
+                kombinerat barnvagnsrum och rullstolsrum. Föreningen äger inga
+                lokaler.
+                <br />
+                <b>Trappstädning</b>: Ja, av städfirma
+            </Paragraph>
 
-      <Hr/>
+            <Hr />
 
-      <SubHeading>
-        Avgiftsförändringar/renoveringar
-      </SubHeading>
+            <SubHeading>Avgiftsförändringar/renoveringar</SubHeading>
 
-      <Paragraph>
-        <b>Har föreningen några avgiftsförändringar planerade?</b>: Avgiften förväntas vara oförändrad 2022
-        <br/>
-        <b>Kommande renoveringar?</b>: Inget planerat
-        <br/>
-        <b>Nyligen gjorda renoveringar?</b>: Nybyggt
-      </Paragraph>
+            <Paragraph>
+                <b>Har föreningen några avgiftsförändringar planerade?</b>:
+                Avgiften förväntas vara oförändrad 2022
+                <br />
+                <b>Kommande renoveringar?</b>: Inget planerat
+                <br />
+                <b>Nyligen gjorda renoveringar?</b>: Nybyggt
+            </Paragraph>
 
-      <Hr/>
+            <Hr />
 
-      <SubHeading>
-        TV/Bredband
-      </SubHeading>
+            <SubHeading>TV/Bredband</SubHeading>
 
-      <Paragraph>
-        Bredband, 1000/1000 Mbit/s ingår i avgiften
-      </Paragraph>
+            <Paragraph>Bredband, 1000/1000 Mbit/s ingår i avgiften</Paragraph>
 
-      <Hr/>
+            <Hr />
 
-      <SubHeading>
-        Parkering
-      </SubHeading>
+            <SubHeading>Parkering</SubHeading>
 
-      <Paragraph>
-        Erbjuds per förfrågan
-      </Paragraph>
+            <Paragraph>Erbjuds per förfrågan</Paragraph>
 
-      <Hr/>
+            <Hr />
 
-      <SubHeading>
-        El
-      </SubHeading>
+            <SubHeading>El</SubHeading>
 
-      <Paragraph>
-        Bostadsrättsinnehavaren ansvarar själv för elabbonemang.
-      </Paragraph>
+            <Paragraph>
+                Bostadsrättsinnehavaren ansvarar själv för elabbonemang.
+            </Paragraph>
 
-      <Hr/>
+            <Hr />
 
-      <SubHeading>
-        Ekonomi
-      </SubHeading>
+            <SubHeading>Ekonomi</SubHeading>
 
-      <Paragraph>
-        Vår ekonomiska förvaltare är BRF EKONOMEN I STOCKHOLM AB
-        <br/>
-        De tillhandahåller mäklarbild samt sköter all hantering av överlåtelser, medlemsansökan, pantsättning mm.
-      </Paragraph>
+            <Paragraph>
+                Vår ekonomiska förvaltare är BRF EKONOMEN I STOCKHOLM AB
+                <br />
+                De tillhandahåller mäklarbild samt sköter all hantering av
+                överlåtelser, medlemsansökan, pantsättning mm.
+            </Paragraph>
 
-      <Hr/>
+            <Hr />
 
-      <SubHeading>
-        Skicka medlemsansökningar, pantsättningar, överlåtelser mm till
-      </SubHeading>
+            <SubHeading>
+                Skicka medlemsansökningar, pantsättningar, överlåtelser mm till
+            </SubHeading>
 
-      <Paragraph>
-        Brf Flygplansfabriken
-        <br/>
-        ℅ Brf Ekonomen i Stockholm AB
-        <br/>
-        Fredsgatan 13
-        <br/>
-        149 30 NYNÄSHAMN
-      </Paragraph>
+            <Paragraph>
+                Brf Flygplansfabriken
+                <br />
+                ℅ Brf Ekonomen i Stockholm AB
+                <br />
+                Fredsgatan 13
+                <br />
+                149 30 NYNÄSHAMN
+            </Paragraph>
 
-      <LinkTo type={'Mail'}>
-        info@brfekonomen.se
-      </LinkTo>
-      <LinkTo type={'Tel'}>
-        08-588 85 740
-      </LinkTo>
-    </PageContainer>
-  );
+            <LinkTo type={"Mail"}>info@brfekonomen.se</LinkTo>
+            <LinkTo type={"Tel"}>08-588 85 740</LinkTo>
+        </PageContainer>
+    );
 };

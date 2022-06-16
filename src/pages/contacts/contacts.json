@@ -1,70 +1,88 @@
 {
-  "styrelsen": {
-    "name": "Styrelsen",
-    "email": "styrelse@brf-flygplansfabriken.se",
-    "homepage": "http://brf-flygplansfabriken.se",
-    "members": [{
-      "name": "Jesper Persson",
-      "role": "Ordförande"
-    }, {
-      "name": "Malin Forsberg",
-      "role": "Vice Ordförande"
-    }, {
-      "name": "Quang Vu",
-      "role": "Styrelseledamot"
-    }, {
-      "name": "Albin Ullmark",
-      "role": "Suppleant"
-    }]
-  },
-  "Fastighetsservice": {
-    "name": "Fastighetsskötsel AB",
-    "phone": [{
-      "number": "010-207 03 50",
-      "openingHours": "Vardagar 08.00-16.00"
-    }, {
-      "number": " 010-207 03 70",
-      "openingHours": "Överig tid"
-    }],
-    "homePage": "https://fastighetsskotsel.se/kontakta-oss",
-    "email": "info@fastighetsskotsel.se"
-  },
-  "accounting": {
-    "name": "Brf ekonomen",
-    "address": {
-      "streetName": "Fredsgatan 13",
-      "code": "149 30",
-      "city": "Nynäshamn"
+    "styrelsen": {
+        "name": "Styrelsen",
+        "email": "styrelse@brf-flygplansfabriken.se",
+        "homepage": "http://brf-flygplansfabriken.se",
+        "members": [
+            {
+                "name": "Jesper Persson",
+                "role": "Ordförande"
+            },
+            {
+                "name": "Malin Forsberg",
+                "role": "Vice Ordförande"
+            },
+            {
+                "name": "Quang Vu",
+                "role": "Styrelseledamot"
+            },
+            {
+                "name": "Albin Ullmark",
+                "role": "Suppleant"
+            }
+        ]
     },
-    "phone": [{
-      "number": "08-588 857 40"
-    }],
-    "email": "info@brfekonomen.se",
-    "homepage": "https://brfekonomen.realportal.nu"
-  },
-  "parking": {
-    "name": "Aimo Park",
-    "phone": [{
-      "number": "0771-96 90 00"
-    }]
-  },
-  "elevator": {
-    "name": "Hissen AB",
-    "phone": [{
-      "number": "08-61 84 84 8"
-    }]
-  },
-  "broadband": {
-    "name": "Bahnhof AB",
-    "phone": [{
-      "number": "010-510 00 00"
-    }]
-  },
-  "lockService": {
-    "name": "Roséns Låsservice AB",
-    "phone": [{
-      "number": "070-788 48 09"
-    }],
-    "email": "info@rosenlas.se"
-  }
+    "Fastighetsservice": {
+        "name": "Fastighetsskötsel AB",
+        "phone": [
+            {
+                "number": "010-207 03 50",
+                "openingHours": "Vardagar 08.00-16.00"
+            },
+            {
+                "number": " 010-207 03 70",
+                "openingHours": "Överig tid"
+            }
+        ],
+        "homePage": "https://fastighetsskotsel.se/kontakta-oss",
+        "email": "info@fastighetsskotsel.se"
+    },
+    "accounting": {
+        "name": "Brf ekonomen",
+        "address": {
+            "streetName": "Fredsgatan 13",
+            "code": "149 30",
+            "city": "Nynäshamn"
+        },
+        "phone": [
+            {
+                "number": "08-588 857 40"
+            }
+        ],
+        "email": "info@brfekonomen.se",
+        "homepage": "https://brfekonomen.realportal.nu"
+    },
+    "parking": {
+        "name": "Aimo Park",
+        "phone": [
+            {
+                "number": "0771-96 90 00"
+            }
+        ]
+    },
+    "elevator": {
+        "name": "Hissen AB",
+        "phone": [
+            {
+                "number": "08-61 84 84 8"
+            }
+        ]
+    },
+    "broadband": {
+        "name": "Bahnhof AB",
+        "phone": [
+            {
+                "number": "010-510 00 00"
+            }
+        ]
+    },
+    "lockService": {
+        "name": "Roséns Låsservice AB",
+        "phone": [
+            {
+                "number": "070-788 48 09"
+            }
+        ],
+        "email": "info@rosenlas.se"
+    }
 }
