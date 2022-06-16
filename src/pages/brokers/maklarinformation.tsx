@@ -57,6 +57,9 @@ export const Maklarinformation = () => {
                 lokaler.
                 <br />
                 <b>Trappstädning</b>: Ja, av städfirma
+                <br />
+                <b>Fastighetens energiklass</b>: D, Energideklarationen utförd
+                2020-05-12
             </Paragraph>
 
             <Hr />

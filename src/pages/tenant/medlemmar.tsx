@@ -11,6 +11,20 @@ import {
 import contacts from "../contacts/contacts.json";
 
 export const Medlemmar = () => {
+    const row = (name: string, post: string) => (
+        <TableRow>
+            <TableCell>
+                <Typography>
+                    <b>{name}</b>
+                </Typography>
+            </TableCell>
+
+            <TableCell>
+                <Typography>{post}</Typography>
+            </TableCell>
+        </TableRow>
+    );
+
     return (
         <PageContainer>
             <Heading>Styrelsemedlemmar</Heading>
@@ -30,65 +44,11 @@ export const Medlemmar = () => {
                 </caption>
 
                 <TableBody>
-                    <TableRow>
-                        <TableCell>
-                            <Typography>
-                                <b>Peter Andersson</b>
-                            </Typography>
-                        </TableCell>
-
-                        <TableCell>
-                            <Typography>Ordförande</Typography>
-                        </TableCell>
-                    </TableRow>
-
-                    <TableRow>
-                        <TableCell>
-                            <Typography>
-                                <b>Quang Vu</b>
-                            </Typography>
-                        </TableCell>
-
-                        <TableCell>
-                            <Typography>Styrelseledamot</Typography>
-                        </TableCell>
-                    </TableRow>
-
-                    <TableRow>
-                        <TableCell>
-                            <Typography>
-                                <b>Albin Ullmark</b>
-                            </Typography>
-                        </TableCell>
-
-                        <TableCell>
-                            <Typography>Styrelseledamot</Typography>
-                        </TableCell>
-                    </TableRow>
-
-                    <TableRow>
-                        <TableCell>
-                            <Typography>
-                                <b>Fredrik Andersson</b>
-                            </Typography>
-                        </TableCell>
-
-                        <TableCell>
-                            <Typography>Styrelseledamot</Typography>
-                        </TableCell>
-                    </TableRow>
-
-                    <TableRow>
-                        <TableCell>
-                            <Typography>
-                                <b>Linnea Werre </b>
-                            </Typography>
-                        </TableCell>
-
-                        <TableCell>
-                            <Typography>Suppleant</Typography>
-                        </TableCell>
-                    </TableRow>
+                    {row("Peter Andersson", "Ordförande")}
+                    {row("Albin Ullmark", "Styrelseledamot")}
+                    {row("Linnea Werre", "Styrelseledamot")}
+                    {row("Kandan Bakhtiar Ali", "Suppleant")}
+                    {row("Rasmus Fredrikson", "Suppleant")}
                 </TableBody>
             </Table>
         </PageContainer>

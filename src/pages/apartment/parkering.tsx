@@ -15,7 +15,7 @@ export const Parkering = () => {
             <Heading>Parkering</Heading>
             <Paragraph>
                 Brf Flygplansfabriken äger och förfogar över <b>21st</b>{" "}
-                parkeringsplatser.
+                parkeringsplatser varav fyra har laddningsstolpe för elbil.
             </Paragraph>
 
             <Hr />
@@ -24,7 +24,8 @@ export const Parkering = () => {
 
             <Paragraph>
                 Parkeringsplatserna utomhus uthyres av föreningen till en
-                kostnad av fn. <b>800 kr/mån</b>
+                kostnad av fn. <b>800 kr/mån</b>. Ett tillägg på 400kr för elen
+                tillkommer på platserna med laddningstolpar.
                 <br />
                 <br />
                 För information om eventuellt lediga parkeringsplatser, kontakta
