@@ -47,7 +47,10 @@ export const Kontakter = () => {
             <SubHeading>Parkeringsplatser och tillstånd utomhus</SubHeading>
 
             <Paragraph>
-                <b>Kontakta</b> {accounting.name}
+                <b>Kontakta</b>
+                <br />
+                {accounting.name}
+                <br />
                 E-post: <LinkTo type={"Mail"}>{accounting.email}</LinkTo>
             </Paragraph>
         </PageContainer>

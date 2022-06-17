@@ -163,7 +163,7 @@ export const Trivselregler = () => {
                 Var sparsam vid varmvattenförbrukning och lämna inte vatten
                 rinnande i onödan. Var också sparsam med el i fastighetens
                 gemensamma utrymmen. Byt kranpackning när vatten står och
-                droppar. Tänk också på att alltid hålla god ordning i soprummen.
+                droppar.
                 <br />
                 Kostnader för vatten och el i gemensamma utrymmen samt
                 avfallshantering betalas gemensamt av alla bostadsrättshavare.

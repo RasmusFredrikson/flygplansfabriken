@@ -127,29 +127,6 @@ export const Felanmalan = () => {
 
             <Hr />
 
-            <SubHeading>Avgifter och avier</SubHeading>
-
-            <Paragraph>
-                Logga in på mina sidor hos {contacts.accounting.name}
-                <br />
-                <Link href={contacts.accounting.homepage}>
-                    {contacts.accounting.homepage}
-                </Link>
-            </Paragraph>
-
-            <Hr />
-
-            <SubHeading>Parkeringsplatser och tillstånd utomhus</SubHeading>
-
-            <Paragraph>
-                <b>Kontakta</b> <br /> {contacts.accounting.name}
-                <br />
-                E-post:{" "}
-                <LinkTo type={"Mail"}>{contacts.accounting.email}</LinkTo>
-            </Paragraph>
-
-            <Hr />
-
             <SubHeading>Fel på hiss</SubHeading>
 
             <Paragraph>
