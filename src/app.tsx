@@ -7,7 +7,6 @@ import { GlobalStyle } from "./mui-override";
 import { AppMenu } from "./pages/app-menu";
 import { Box, Container } from "@material-ui/core";
 import { Maklarinformation } from "./pages/brokers/maklarinformation";
-import { BrfBackground } from "./pages/brf-background";
 import { Felanmalan } from "./pages/report/felanmalan";
 import { Andrahandsuthyrning } from "./pages/apartment/andrahandsuthyrning";
 import { Forandring } from "./pages/apartment/forandring";
@@ -20,7 +19,7 @@ import { Kontakter } from "./pages/contacts/Kontakter";
 import { Teknik } from "./pages/apartment/teknik";
 
 const App = () => (
-    <BrfBackground>
+    <Box style={{ background: "#cdcdcd" }}>
         <HashRouter>
             <AppMenu />
 
@@ -84,7 +83,7 @@ const App = () => (
                 </Box>
             </Container>
         </HashRouter>
-    </BrfBackground>
+    </Box>
 );
 
 ReactDOM.render(

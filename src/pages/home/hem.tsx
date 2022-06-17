@@ -1,6 +1,5 @@
 import React from "react";
 import { Heading, PageContainer, Paragraph } from "../page-container";
-import { BrfBackground } from "../brf-background";
 import { Box } from "@material-ui/core";
 
 export const Hem = () => (
