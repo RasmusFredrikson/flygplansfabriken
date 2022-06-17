@@ -225,7 +225,7 @@ export const Underhallsansvar = () => {
                         Hens vårdslöshet eller försummelse av någon som hör till
                         hens hushåll eller som besöker hen som gäst, någon annan
                         som hen har inrymt i lägenheten eller någon som hens
-                        räkning ut-för arbeten i lägenhet
+                        räkning utför arbeten i lägenhet
                     </Typography>
                 </li>
             </ul>

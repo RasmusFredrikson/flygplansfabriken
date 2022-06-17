@@ -29,8 +29,8 @@ export const Forandring = () => {
                 utföras under dagtid.
                 <br />
                 <br />
-                Du ansvararför att sätta upp information i hiss och trapphus för
-                tider för renoveringen.
+                Du ansvarar för att sätta upp information i hiss och trapphus
+                för tider för renoveringen.
             </Paragraph>
 
             <Paragraph>

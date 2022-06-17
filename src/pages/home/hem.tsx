@@ -1,6 +1,7 @@
 import React from "react";
 import { Heading, PageContainer, Paragraph } from "../page-container";
 import { Box } from "@material-ui/core";
+import homeBg from "../../assets/framsidan2.png";
 
 export const Hem = () => (
     <PageContainer>
@@ -19,7 +20,7 @@ export const Hem = () => (
         </Paragraph>
 
         <Box>
-            <img src={"../assets/framsidan2.png"} width={"100%"} />
+            <img src={homeBg} width={"100%"} />
         </Box>
     </PageContainer>
 );

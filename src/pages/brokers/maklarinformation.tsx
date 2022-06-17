@@ -92,7 +92,7 @@ export const Maklarinformation = () => {
             <SubHeading>El</SubHeading>
 
             <Paragraph>
-                Bostadsrättsinnehavaren ansvarar själv för elabbonemang.
+                Bostadsrättsinnehavaren ansvarar själv för elabonnemang.
             </Paragraph>
 
             <Hr />
@@ -123,6 +123,7 @@ export const Maklarinformation = () => {
             </Paragraph>
 
             <LinkTo type={"Mail"}>info@brfekonomen.se</LinkTo>
+            <br />
             <LinkTo type={"Tel"}>08-588 85 740</LinkTo>
         </PageContainer>
     );

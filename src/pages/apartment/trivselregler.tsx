@@ -287,7 +287,7 @@ export const Trivselregler = () => {
                 Har Du fest så informera gärna grannarna i god tid innan.
                 <br />
                 <br />
-                Borrning i väggar samt kraftigare störningar får endast urföras
+                Borrning i väggar samt kraftigare störningar får endast utföras
                 måndag - fredag 8:00 - 17:00 samt lördag - söndag 10:00 - 16:00.
             </Paragraph>
 

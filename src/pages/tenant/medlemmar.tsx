@@ -9,6 +9,7 @@ import {
     Typography,
 } from "@material-ui/core";
 import contacts from "../contacts/contacts.json";
+import boardMembers from "../../assets/styrelsemedlemmar.jpg";
 
 export const Medlemmar = () => {
     const row = (name: string, post: string) => (
@@ -51,6 +52,7 @@ export const Medlemmar = () => {
                     {row("Rasmus Fredrikson", "Suppleant")}
                 </TableBody>
             </Table>
+            <img src={boardMembers} width={"100%"} />
         </PageContainer>
     );
 };

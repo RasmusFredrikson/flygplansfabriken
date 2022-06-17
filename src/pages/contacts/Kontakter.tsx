@@ -39,7 +39,11 @@ export const Kontakter = () => {
             <Paragraph>
                 <b>Logga in</b> på{" "}
                 <Link href={accounting.homepage}>mina sidor</Link> hos{" "}
-                {accounting.name}
+                {accounting.name}.
+                <br />
+                Inloggningsuppgifter hittar du på din avgiftsavi.
+                <br />
+                På sidan hittar du även blankett för Autogiro.
             </Paragraph>
 
             <Hr />

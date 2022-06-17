@@ -33,7 +33,7 @@ export const Teknik = () => {
                 bostadsrättsägare.
                 <br />
                 <br />
-                Tv-abonnemang finns att beställt hos{" "}
+                Tv-abonnemang finns att beställa hos{" "}
                 <Link href="https://www.serverado.se">Serverado</Link>
             </Paragraph>
 
@@ -42,7 +42,7 @@ export const Teknik = () => {
             <SubHeading>El</SubHeading>
 
             <Paragraph>
-                Elnätsbolag är Ellevio levererar el till fastigheten,
+                Elnätsbolag är Ellevio som levererar el till fastigheten,
                 elhandelsbolag väljer bostadsrättsinnehavaren fritt efter eget
                 önskemål.
                 <br />
@@ -62,21 +62,6 @@ export const Teknik = () => {
             <SubHeading>Värme och ventilation</SubHeading>
 
             <Paragraph>
-                <b>Värme</b>
-                <br />
-                Frånluft sker i köket via fläktkåpan. Denna har ingen egen motor
-                utan är grundinställd från central fläkt och när du ska laga mat
-                vrider du upp donet som gör att flödet ökas. Det är alltså på
-                eller av och inga mellanlägen finns.
-                <br />
-                <br />
-                Vid vädring – gör det snabbt och effektivt. Öppna ett fönster
-                eller fönsterdörr på vid gavel under en kortare stund. Ställ
-                inte fönster på glänt under en längre tid. Detta för att spara
-                på värmeenergin i huset.
-            </Paragraph>
-
-            <Paragraph>
                 <b>Golvvärme</b>
                 <br />
                 Badrummet är i vissa lägenheter försett med komfortgolvvärme.
@@ -85,7 +70,7 @@ export const Teknik = () => {
             </Paragraph>
             <Warn>
                 Varning, inga infästningar får utföras i badrums golvet då
-                värmeslingorna kan skadas samt tätskiktet förstörs.
+                värmeslingorna kan skadas samt tätskiktet förstöras.
             </Warn>
 
             <Paragraph>
@@ -97,12 +82,12 @@ export const Teknik = () => {
                 <br />
                 <br />
                 Frånluft sker i köket via <b>fläktkåpan</b>. Denna har ingen
-                egen motor utan är grundinställd från centralt fläkt och när du
-                ska laga mat så vrider du upp donetsom gör att flödet ökas. Det
+                egen motor utan är grundinställd från central fläkt och när du
+                ska laga mat så vrider du upp donet som gör att flödet ökas. Det
                 är alltså på eller av och inga mellanlägen finns.
                 <br />
                 <br />
-                <b>Obs!</b> Om du avser att byta fläktkåpa så tänkt på att det
+                <b>Obs!</b> Om du avser att byta fläktkåpa så tänk på att det
                 inte går att installera en köksfläkt med motor som kommer att
                 motverka det centrala systemet. Rengöring av fläktkåpan bör
                 göras cirka en gång per månad vid daglig användning. Fläktkåpan
@@ -135,20 +120,6 @@ export const Teknik = () => {
                 Det finns också mindre avstängningsventiler monterade på
                 flertalet av rören försörjande blandare i din lägenhet. Dessa
                 kan användas vid underhåll och reparation av enheterna.
-            </Paragraph>
-
-            <Hr />
-
-            <SubHeading>AVGIFTER & AVIER</SubHeading>
-
-            <Paragraph>
-                Logga in på mina sidor hos{" "}
-                <Link href={contacts.accounting.homepage}>
-                    {contacts.accounting.name}
-                </Link>
-                , inloggningsuppgifter hittar du på din avgiftsavi.
-                <br />
-                På sidan hittar du även blanket för Autogiro.
             </Paragraph>
         </PageContainer>
     );
