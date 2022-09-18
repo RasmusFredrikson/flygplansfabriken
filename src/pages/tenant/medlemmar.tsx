@@ -9,17 +9,21 @@ import {
     Typography,
 } from "@material-ui/core";
 import contacts from "../contacts/contacts.json";
+import peterImg from "../../assets/board-members/peter.jpg";
+import albinImg from "../../assets/board-members/albin.jpg";
+import kandanImg from "../../assets/board-members/kandan.jpg";
+import rasmusImg from "../../assets/board-members/rasmus.jpg";
 
 export const Medlemmar = () => {
     const members = [
-        { imgKey: "peter", name: "Peter Andersson", position: "Ordförande" },
-        { imgKey: "albin", name: "Albin Ullmark", position: "Styrelseledamot" },
+        { img: peterImg, name: "Peter Andersson", position: "Ordförande" },
+        { img: albinImg, name: "Albin Ullmark", position: "Styrelseledamot" },
         {
-            imgKey: "kandan",
+            img: kandanImg,
             name: "Kandan Bakhtiar Ali",
             position: "Suppleant",
         },
-        { imgKey: "rasmus", name: "Rasmus Fredrikson", position: "Suppleant" },
+        { img: rasmusImg, name: "Rasmus Fredrikson", position: "Suppleant" },
     ];
 
     return (
@@ -67,7 +71,7 @@ export const Medlemmar = () => {
                     <div style={{ paddingRight: "10px", textAlign: "center" }}>
                         <img
                             style={{ filter: "grayscale(100%)" }}
-                            src={`../../assets/board-members/${member.imgKey}.jpg`}
+                            src={member.img}
                             width={"200px"}
                         />
                         <div>{member.name}</div>
