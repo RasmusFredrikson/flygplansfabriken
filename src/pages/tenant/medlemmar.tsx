@@ -9,22 +9,18 @@ import {
     Typography,
 } from "@material-ui/core";
 import contacts from "../contacts/contacts.json";
-import boardMembers from "../../assets/styrelsemedlemmar.jpg";
 
 export const Medlemmar = () => {
-    const row = (name: string, post: string) => (
-        <TableRow>
-            <TableCell>
-                <Typography>
-                    <b>{name}</b>
-                </Typography>
-            </TableCell>
-
-            <TableCell>
-                <Typography>{post}</Typography>
-            </TableCell>
-        </TableRow>
-    );
+    const members = [
+        { imgKey: "peter", name: "Peter Andersson", position: "Ordförande" },
+        { imgKey: "albin", name: "Albin Ullmark", position: "Styrelseledamot" },
+        {
+            imgKey: "kandan",
+            name: "Kandan Bakhtiar Ali",
+            position: "Suppleant",
+        },
+        { imgKey: "rasmus", name: "Rasmus Fredrikson", position: "Suppleant" },
+    ];
 
     return (
         <PageContainer>
@@ -45,14 +41,39 @@ export const Medlemmar = () => {
                 </caption>
 
                 <TableBody>
-                    {row("Peter Andersson", "Ordförande")}
-                    {row("Albin Ullmark", "Styrelseledamot")}
-                    {row("Linnea Werre", "Styrelseledamot")}
-                    {row("Kandan Bakhtiar Ali", "Suppleant")}
-                    {row("Rasmus Fredrikson", "Suppleant")}
+                    {members.map((member) => (
+                        <TableRow>
+                            <TableCell>
+                                <Typography>
+                                    <b>{member.name}</b>
+                                </Typography>
+                            </TableCell>
+
+                            <TableCell>
+                                <Typography>{member.position}</Typography>
+                            </TableCell>
+                        </TableRow>
+                    ))}
                 </TableBody>
             </Table>
-            <img src={boardMembers} width={"100%"} />
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "20px",
+                }}
+            >
+                {members.map((member) => (
+                    <div style={{ paddingRight: "10px", textAlign: "center" }}>
+                        <img
+                            style={{ filter: "grayscale(100%)" }}
+                            src={`../../assets/board-members/${member.imgKey}.jpg`}
+                            width={"200px"}
+                        />
+                        <div>{member.name}</div>
+                    </div>
+                ))}
+            </div>
         </PageContainer>
     );
 };
