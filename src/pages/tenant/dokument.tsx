@@ -1,4 +1,14 @@
+import { Box, Link } from "@material-ui/core";
 import React from "react";
+import ar2017 from "../../assets/2016-2017.pdf";
+import ar2018 from "../../assets/2017-2018.pdf";
+import ar2019 from "../../assets/2019.pdf";
+import ar2020 from "../../assets/2020.pdf";
+import ar2021 from "../../assets/2021.pdf";
+import ar2022 from "../../assets/2022.pdf";
+import andrahand from "../../assets/andrahand.pdf";
+import bostadsandring from "../../assets/bostadsandring.pdf";
+import stadgar2019 from "../../assets/stadgar2019.pdf";
 import {
     Heading,
     Hr,
@@ -6,15 +16,6 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { Box, Link } from "@material-ui/core";
-import stadgar2019 from "../../assets/stadgar2019.pdf";
-import ar2021 from "../../assets/2021.pdf";
-import ar2020 from "../../assets/2020.pdf";
-import ar2019 from "../../assets/2019.pdf";
-import ar2018 from "../../assets/2017-2018.pdf";
-import ar2017 from "../../assets/2016-2017.pdf";
-import andrahand from "../../assets/andrahand.pdf";
-import bostadsandring from "../../assets/bostadsandring.pdf";
 
 export const Dokument = () => {
     return (
@@ -32,6 +33,10 @@ export const Dokument = () => {
             <Hr />
 
             <SubHeading>Årsredovisningar</SubHeading>
+
+            <Paragraph>
+                <Link href={ar2022}>Årsredovisning 2022.pdf</Link>
+            </Paragraph>
 
             <Paragraph>
                 <Link href={ar2021}>Årsredovisning 2021.pdf</Link>
