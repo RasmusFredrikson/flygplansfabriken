@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
     AppBar,
     Avatar,
@@ -11,6 +10,7 @@ import {
     useTheme,
 } from "@material-ui/core";
 import { Menu } from "@material-ui/icons";
+import React, { useState } from "react";
 import { MobileMenu, NavMenu, SingleLink } from "./nav-menu";
 
 export const AppMenu = () => {
@@ -49,7 +49,8 @@ export const AppMenu = () => {
                                 subMenu={[
                                     {
                                         name: "Andrahandsuthyrning",
-                                        path: "/boendeinformation/andrahandsuthyrning",
+                                        path:
+                                            "/boendeinformation/andrahandsuthyrning",
                                     },
                                     {
                                         name: "Parkering",
@@ -61,15 +62,23 @@ export const AppMenu = () => {
                                     },
                                     {
                                         name: "Förändring i lgh",
-                                        path: "/boendeinformation/forandring-i-lgh",
+                                        path:
+                                            "/boendeinformation/forandring-i-lgh",
                                     },
                                     {
                                         name: "Trivselregler",
-                                        path: "/boendeinformation/trivselregler",
+                                        path:
+                                            "/boendeinformation/trivselregler",
                                     },
                                     {
                                         name: "Underhållsansvar",
-                                        path: "/boendeinformation/underhallsansvar",
+                                        path:
+                                            "/boendeinformation/underhallsansvar",
+                                    },
+                                    {
+                                        name: "Brandskyddsinformation",
+                                        path:
+                                            "/boendeinformation/brandskyddsinformation",
                                     },
                                 ]}
                             />
@@ -115,11 +124,13 @@ export const AppMenu = () => {
                                     subMenu: [
                                         {
                                             name: "Andrahandsuthyrning",
-                                            path: "/boendeinformation/andrahandsuthyrning",
+                                            path:
+                                                "/boendeinformation/andrahandsuthyrning",
                                         },
                                         {
                                             name: "Parkering",
-                                            path: "/boendeinformation/parkering",
+                                            path:
+                                                "/boendeinformation/parkering",
                                         },
                                         {
                                             name: "teknik",
@@ -127,15 +138,18 @@ export const AppMenu = () => {
                                         },
                                         {
                                             name: "Förändring i lgh",
-                                            path: "/boendeinformation/forandring-i-lgh",
+                                            path:
+                                                "/boendeinformation/forandring-i-lgh",
                                         },
                                         {
                                             name: "Trivselregler",
-                                            path: "/boendeinformation/trivselregler",
+                                            path:
+                                                "/boendeinformation/trivselregler",
                                         },
                                         {
                                             name: "Underhållsansvar",
-                                            path: "/boendeinformation/underhallsansvar",
+                                            path:
+                                                "/boendeinformation/underhallsansvar",
                                         },
                                     ],
                                 },

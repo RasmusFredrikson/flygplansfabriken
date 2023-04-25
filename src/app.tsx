@@ -1,22 +1,23 @@
+import { Box, Container } from "@material-ui/core";
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import { PageNotFound } from "./404";
-import { Hem } from "./pages/home/hem";
 import { GlobalStyle } from "./mui-override";
-import { AppMenu } from "./pages/app-menu";
-import { Box, Container } from "@material-ui/core";
-import { Maklarinformation } from "./pages/brokers/maklarinformation";
-import { Felanmalan } from "./pages/report/felanmalan";
 import { Andrahandsuthyrning } from "./pages/apartment/andrahandsuthyrning";
+import { Brandskyddsinformation } from "./pages/apartment/brandskyddsinformation";
 import { Forandring } from "./pages/apartment/forandring";
 import { Parkering } from "./pages/apartment/parkering";
+import { Teknik } from "./pages/apartment/teknik";
 import { Trivselregler } from "./pages/apartment/trivselregler";
 import { Underhallsansvar } from "./pages/apartment/underhallsansvar";
-import { Medlemmar } from "./pages/tenant/medlemmar";
-import { Dokument } from "./pages/tenant/dokument";
+import { AppMenu } from "./pages/app-menu";
+import { Maklarinformation } from "./pages/brokers/maklarinformation";
 import { Kontakter } from "./pages/contacts/Kontakter";
-import { Teknik } from "./pages/apartment/teknik";
+import { Hem } from "./pages/home/hem";
+import { Felanmalan } from "./pages/report/felanmalan";
+import { Dokument } from "./pages/tenant/dokument";
+import { Medlemmar } from "./pages/tenant/medlemmar";
 
 const App = () => (
     <Box style={{ background: "#cdcdcd" }}>
@@ -58,6 +59,12 @@ const App = () => (
 
                         <Route path={"/boendeinformation/underhallsansvar"}>
                             <Underhallsansvar />
+                        </Route>
+
+                        <Route
+                            path={"/boendeinformation/brandskyddsinformation"}
+                        >
+                            <Brandskyddsinformation />
                         </Route>
 
                         <Route path="/felanmalan">
