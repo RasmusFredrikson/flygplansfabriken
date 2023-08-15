@@ -1,3 +1,4 @@
+import { Typography } from "@material-ui/core";
 import React from "react";
 import {
     Heading,
@@ -6,7 +7,6 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { Typography } from "@material-ui/core";
 
 export const Trivselregler = () => {
     return (
@@ -281,14 +281,16 @@ export const Trivselregler = () => {
                 utrymmen som t ex i trapphus och hiss.
                 <br />
                 <br />
-                Reglerna gäller dygnet runt men är extra angelägna att följa
-                vardagar från kl. 22 på kvällen till kl. 7 på morgonen. Man bör
-                därför undvika att köra tvätt- och diskmaskiner under denna tid.
-                Har Du fest så informera gärna grannarna i god tid innan.
+                <b>
+                    Borrning i väggar samt kraftigare störningar får endast
+                    utföras måndag - fredag 8:00 - 17:00 samt lördag - söndag
+                    10:00 - 16:00.
+                </b>
                 <br />
                 <br />
-                Borrning i väggar samt kraftigare störningar får endast utföras
-                måndag - fredag 8:00 - 17:00 samt lördag - söndag 10:00 - 16:00.
+                Undvik också att köra tvätt- och diskmaskiner vardagar från kl.
+                22 på kvällen till kl. 7 på morgonen. Har Du fest så informera
+                gärna grannarna i god tid innan.
             </Paragraph>
 
             <Hr />
