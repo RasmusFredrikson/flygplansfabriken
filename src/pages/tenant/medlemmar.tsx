@@ -1,6 +1,5 @@
-import React from "react";
-import { Heading, PageContainer, SubHeading } from "../page-container";
 import {
+    Grid,
     Link,
     Table,
     TableBody,
@@ -8,22 +7,33 @@ import {
     TableRow,
     Typography,
 } from "@material-ui/core";
-import contacts from "../contacts/contacts.json";
-import peterImg from "../../assets/board-members/peter.jpg";
+import React from "react";
 import albinImg from "../../assets/board-members/albin.jpg";
 import kandanImg from "../../assets/board-members/kandan.jpg";
+import peterImg from "../../assets/board-members/peter.jpg";
 import rasmusImg from "../../assets/board-members/rasmus.jpg";
+import contacts from "../contacts/contacts.json";
+import { Heading, PageContainer, SubHeading } from "../page-container";
 
 export const Medlemmar = () => {
     const members = [
         { img: peterImg, name: "Peter Andersson", position: "Ordförande" },
         { img: albinImg, name: "Albin Ullmark", position: "Styrelseledamot" },
         {
+            img: null,
+            name: "Kristian Andersson",
+            position: "Styrelseledamot",
+        },
+        {
+            img: rasmusImg,
+            name: "Rasmus Fredrikson",
+            position: "Styrelseledamot",
+        },
+        {
             img: kandanImg,
             name: "Kandan Bakhtiar Ali",
             position: "Suppleant",
         },
-        { img: rasmusImg, name: "Rasmus Fredrikson", position: "Suppleant" },
     ];
 
     return (
@@ -46,7 +56,7 @@ export const Medlemmar = () => {
 
                 <TableBody>
                     {members.map((member) => (
-                        <TableRow>
+                        <TableRow key={member.name}>
                             <TableCell>
                                 <Typography>
                                     <b>{member.name}</b>
@@ -60,24 +70,32 @@ export const Medlemmar = () => {
                     ))}
                 </TableBody>
             </Table>
-            <div
+            <Grid
+                container
                 style={{
-                    display: "flex",
-                    justifyContent: "center",
                     marginTop: "20px",
+                    textAlign: "center",
                 }}
             >
-                {members.map((member) => (
-                    <div style={{ paddingRight: "10px", textAlign: "center" }}>
-                        <img
-                            style={{ filter: "grayscale(100%)" }}
-                            src={member.img}
-                            width={"200px"}
-                        />
-                        <div>{member.name}</div>
-                    </div>
-                ))}
-            </div>
+                {members
+                    .filter((m) => !!m.img)
+                    .map((member) => (
+                        <Grid
+                            key={member.name}
+                            md={3}
+                            sm={6}
+                            xs={12}
+                            style={{ marginTop: "10px" }}
+                        >
+                            <img
+                                style={{ filter: "grayscale(100%)" }}
+                                src={member.img}
+                                width={"200px"}
+                            />
+                            <div>{member.name}</div>
+                        </Grid>
+                    ))}
+            </Grid>
         </PageContainer>
     );
 };
