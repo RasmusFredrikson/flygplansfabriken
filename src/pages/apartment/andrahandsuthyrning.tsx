@@ -1,4 +1,7 @@
+import { Link } from "@material-ui/core";
 import React from "react";
+import andrahand from "../../assets/andrahand.pdf";
+import { LinkTo } from "../contacts/contact-card";
 import {
     Heading,
     Hr,
@@ -6,9 +9,6 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { Link } from "@material-ui/core";
-import { LinkTo } from "../contacts/contact-card";
-import andrahand from "../../assets/andrahand.pdf";
 
 export const Andrahandsuthyrning = () => {
     return (
@@ -33,8 +33,15 @@ export const Andrahandsuthyrning = () => {
                 <LinkTo type={"Mail"}>
                     andrahand@brf-flygplansfabriken.se
                 </LinkTo>
-                . Godkänd uthyrningstid är max ett år. Handläggningstiden är ca
-                30 dagar.
+                .
+                <ul>
+                    <li>Godkänd uthyrningstid är max ett år.</li>
+                    <li>
+                        Uthyrningen ska ske mellan den första och sista dagen i
+                        respektive månad.
+                    </li>
+                    <li>Handläggningstiden är ca 30 dagar.</li>
+                </ul>
             </Paragraph>
 
             <SubHeading>Avgift i samband med andrahandsuthyrning</SubHeading>
