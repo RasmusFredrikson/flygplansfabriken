@@ -2,6 +2,7 @@ import { Link } from "@material-ui/core";
 import React from "react";
 import autogiro from "../../assets/autogiro.pdf";
 import { LinkTo } from "../contacts/contact-card";
+import contacts from "../contacts/contacts.json";
 import { Heading, PageContainer, Paragraph } from "../page-container";
 
 export const Autogiro = () => {
@@ -18,9 +19,7 @@ export const Autogiro = () => {
                 .
                 <br />
                 Blanketten mailas till{" "}
-                <LinkTo type={"Mail"}>
-                    styrelsen@brf-flygplansfabriken.se
-                </LinkTo>
+                <LinkTo type={"Mail"}>{contacts.styrelsen.email}</LinkTo>
                 . Den kan även lämnas i styrelsens brevlåda längst upp till
                 höger vid postfacken.
                 <br />
