@@ -26,7 +26,11 @@ export const Andrahandsuthyrning = () => {
 
             <Paragraph>
                 För att ansöka om att hyra ut din bostad i andra hand behöver du
-                fylla i <Link href={andrahand}>ansökningsblankett</Link>.
+                fylla i{" "}
+                <Link href={andrahand} target="_blank">
+                    ansökningsblankett
+                </Link>
+                .
                 <br />
                 <br />
                 Blanketten mailas därefter till{" "}

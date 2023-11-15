@@ -5,6 +5,7 @@ import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import { PageNotFound } from "./404";
 import { GlobalStyle } from "./mui-override";
 import { Andrahandsuthyrning } from "./pages/apartment/andrahandsuthyrning";
+import { Autogiro } from "./pages/apartment/autogiro";
 import { Brandskyddsinformation } from "./pages/apartment/brandskyddsinformation";
 import { Forandring } from "./pages/apartment/forandring";
 import { Parkering } from "./pages/apartment/parkering";
@@ -65,6 +66,10 @@ const App = () => (
                             path={"/boendeinformation/brandskyddsinformation"}
                         >
                             <Brandskyddsinformation />
+                        </Route>
+
+                        <Route path={"/boendeinformation/autogiro"}>
+                            <Autogiro />
                         </Route>
 
                         <Route path="/felanmalan">

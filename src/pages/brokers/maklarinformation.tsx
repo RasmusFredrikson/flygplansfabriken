@@ -1,4 +1,5 @@
 import React from "react";
+import { LinkTo } from "../contacts/contact-card";
 import {
     Heading,
     Hr,
@@ -6,12 +7,11 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { LinkTo } from "../contacts/contact-card";
 
 export const Maklarinformation = () => {
     return (
         <PageContainer>
-            <Heading>Mäklarinformation</Heading>
+            <Heading>Mäklar-information</Heading>
             <br />
             <SubHeading>allmänt</SubHeading>
 
@@ -64,7 +64,7 @@ export const Maklarinformation = () => {
 
             <Hr />
 
-            <SubHeading>Avgiftsförändringar/renoveringar</SubHeading>
+            <SubHeading>Avgiftsförändringar / renoveringar</SubHeading>
 
             <Paragraph>
                 <b>Har föreningen några avgiftsförändringar planerade?</b>:

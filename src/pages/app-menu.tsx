@@ -80,6 +80,10 @@ export const AppMenu = () => {
                                         path:
                                             "/boendeinformation/brandskyddsinformation",
                                     },
+                                    {
+                                        name: "Autogiro",
+                                        path: "/boendeinformation/autogiro",
+                                    },
                                 ]}
                             />
                             <SingleLink path="/felanmalan" name="Felanmälan" />

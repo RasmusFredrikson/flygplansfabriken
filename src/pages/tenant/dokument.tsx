@@ -7,6 +7,7 @@ import ar2020 from "../../assets/2020.pdf";
 import ar2021 from "../../assets/2021.pdf";
 import ar2022 from "../../assets/2022.pdf";
 import andrahand from "../../assets/andrahand.pdf";
+import autogiro from "../../assets/autogiro.pdf";
 import bostadsandring from "../../assets/bostadsandring.pdf";
 import stadgar2019 from "../../assets/stadgar2019.pdf";
 import {
@@ -64,6 +65,14 @@ export const Dokument = () => {
 
             <Paragraph>
                 <Link href={andrahand}>Andrahandsuthyrning.pdf</Link>
+            </Paragraph>
+
+            <Hr />
+
+            <SubHeading>Ansökan autogiro</SubHeading>
+
+            <Paragraph>
+                <Link href={autogiro}>Autogiro.pdf</Link>
             </Paragraph>
 
             <Hr />
