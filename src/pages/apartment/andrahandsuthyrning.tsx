@@ -9,6 +9,7 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
+import contacts from "../contacts/contacts.json";
 
 export const Andrahandsuthyrning = () => {
     return (
@@ -34,10 +35,7 @@ export const Andrahandsuthyrning = () => {
                 <br />
                 <br />
                 Blanketten mailas därefter till{" "}
-                <LinkTo type={"Mail"}>
-                    andrahand@brf-flygplansfabriken.se
-                </LinkTo>
-                .
+                <LinkTo type={"Mail"}>{contacts.styrelsen.email}</LinkTo>.
                 <ul>
                     <li>Godkänd uthyrningstid är max ett år.</li>
                     <li>
