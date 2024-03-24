@@ -1,3 +1,4 @@
+import { Menu } from "@mui/icons-material";
 import {
     AppBar,
     Avatar,
@@ -9,7 +10,6 @@ import {
     Typography,
     useTheme,
 } from "@mui/material";
-import { Menu } from "@mui/icons-material";
 import React, { useState } from "react";
 import { MobileMenu, NavMenu, SingleLink } from "./nav-menu";
 
@@ -108,7 +108,8 @@ export const AppMenu = () => {
                                 color="primary"
                                 aria-label="menu"
                                 onClick={() => setMobileMenu(!openMobileMenu)}
-                                size="large">
+                                size="large"
+                            >
                                 <Menu />
                             </IconButton>
                         </Hidden>

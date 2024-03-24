@@ -26,7 +26,7 @@ const App = () => (
             <AppMenu />
 
             <Container fixed maxWidth={"lg"}>
-                <Box paddingY={15}>
+                <Box paddingY={6}>
                     <Routes>
                         <Route
                             path="/"

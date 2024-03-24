@@ -1,119 +1,116 @@
 import {
-    createMuiTheme,
     CssBaseline,
     responsiveFontSizes,
-    ThemeProvider,
-    Theme,
     StyledEngineProvider,
 } from "@mui/material";
-import { adaptV4Theme } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React, { PropsWithChildren } from "react";
 
-declare module "@mui/styles/defaultTheme" {
-    // eslint-disable-next-line @typescript-eslint/no-empty-interface
-    interface DefaultTheme extends Theme {}
-}
-
-declare module "@mui/styles/defaultTheme" {
-    // eslint-disable-next-line @typescript-eslint/no-empty-interface
-    interface DefaultTheme extends Theme {}
-}
-
 export const MuiOverride = responsiveFontSizes(
-    createMuiTheme(
-        adaptV4Theme({
-            palette: {
-                primary: {
-                    main: "#FFFFFF",
-                    contrastText: "#393939",
-                },
-                secondary: {
-                    main: "#F47A1F",
-                    contrastText: "#ffffff",
-                },
-                background: {
-                    paper: "#FFFFFF",
-                    default: "#FFFFFF",
-                },
+    createTheme({
+        palette: {
+            primary: {
+                main: "#FFFFFF",
+                contrastText: "#393939",
             },
-            typography: {
-                fontWeightMedium: 500,
-                fontWeightBold: 700,
-                fontWeightLight: 300,
-                fontWeightRegular: 400,
-                htmlFontSize: 14,
-                fontSize: 12,
-                h1: {
-                    fontFamily: "Montserrat, sans-serif",
-                    textTransform: "uppercase",
-                    color: "#393939",
-                },
-                h2: {
-                    fontFamily: "Montserrat, sans-serif",
-                    textTransform: "uppercase",
-                    color: "#393939",
-                },
-                h3: {
-                    fontFamily: "Montserrat, sans-serif",
-                    textTransform: "uppercase",
-                    color: "#393939",
-                },
-                h4: {
-                    fontFamily: "Montserrat, sans-serif",
-                    textTransform: "uppercase",
-                    color: "#393939",
-                },
-                h5: {
-                    fontFamily: "Montserrat, sans-serif",
-                    textTransform: "uppercase",
-                    color: "#393939",
-                },
-                h6: {
-                    fontFamily: "Montserrat, sans-serif",
-                    textTransform: "uppercase",
-                    color: "#393939",
-                },
-                subtitle1: {},
-                subtitle2: {},
-                body1: {},
-                body2: {
-                    color: "#868686",
-                },
-                caption: {},
-                overline: {},
+            secondary: {
+                main: "#F47A1F",
+                contrastText: "#ffffff",
             },
-            props: {
-                MuiAppBar: {
+            background: {
+                paper: "#FFFFFF",
+                default: "#FFFFFF",
+            },
+        },
+        typography: {
+            fontWeightMedium: 500,
+            fontWeightBold: 700,
+            fontWeightLight: 300,
+            fontWeightRegular: 400,
+            htmlFontSize: 14,
+            fontSize: 12,
+            h1: {
+                fontFamily: "Montserrat, sans-serif",
+                textTransform: "uppercase",
+                color: "#393939",
+            },
+            h2: {
+                fontFamily: "Montserrat, sans-serif",
+                textTransform: "uppercase",
+                color: "#393939",
+            },
+            h3: {
+                fontFamily: "Montserrat, sans-serif",
+                textTransform: "uppercase",
+                color: "#393939",
+            },
+            h4: {
+                fontFamily: "Montserrat, sans-serif",
+                textTransform: "uppercase",
+                color: "#393939",
+            },
+            h5: {
+                fontFamily: "Montserrat, sans-serif",
+                textTransform: "uppercase",
+                color: "#393939",
+            },
+            h6: {
+                fontFamily: "Montserrat, sans-serif",
+                textTransform: "uppercase",
+                color: "#393939",
+            },
+            subtitle1: {},
+            subtitle2: {},
+            body1: {},
+            body2: {
+                color: "#868686",
+            },
+            caption: {},
+            overline: {},
+        },
+        components: {
+            MuiAppBar: {
+                defaultProps: {
                     elevation: 0,
                     position: "relative",
                 },
-                MuiMenu: {
-                    elevation: 1,
-                },
-                MuiLink: {
-                    color: "secondary",
-                },
-            },
-            overrides: {
-                MuiGrid: {
-                    root: {},
-                },
-                MuiAppBar: {
+                styleOverrides: {
                     colorPrimary: {
                         backgroundColor: "rgba(32,37,41,0.9)",
                     },
                 },
-                MuiToolbar: {
+            },
+            MuiGrid: {
+                styleOverrides: {
+                    root: {},
+                },
+            },
+            MuiMenu: {
+                defaultProps: {
+                    elevation: 1,
+                },
+            },
+            MuiLink: {
+                defaultProps: {
+                    color: "secondary",
+                },
+            },
+            MuiToolbar: {
+                styleOverrides: {
                     regular: {
                         backgroundColor: "transparent",
                     },
                 },
-                MuiAccordionSummary: {
+            },
+            MuiAccordionSummary: {
+                styleOverrides: {
                     root: {
                         backgroundColor: "rgb(243, 243, 243)",
                     },
                 },
-                MuiListItem: {
+            },
+            MuiListItem: {
+                styleOverrides: {
                     root: {
                         "&$selected, &$selected:hover": {
                             backgroundColor: "#F47A1F",
@@ -127,16 +124,16 @@ export const MuiOverride = responsiveFontSizes(
                     },
                 },
             },
-            shape: {
-                borderRadius: 0,
+        },
+        shape: {
+            borderRadius: 0,
+        },
+        mixins: {
+            toolbar: {
+                minHeight: 64,
             },
-            mixins: {
-                toolbar: {
-                    minHeight: 64,
-                },
-            },
-        }),
-    ),
+        },
+    }),
 );
 
 export const GlobalStyle = ({ children }: PropsWithChildren<any>) => {
