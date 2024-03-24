@@ -1,7 +1,7 @@
 import { Box, Container } from "@material-ui/core";
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { PageNotFound } from "./404";
 import { GlobalStyle } from "./mui-override";
 import { Andrahandsuthyrning } from "./pages/apartment/andrahandsuthyrning";
@@ -27,71 +27,75 @@ const App = () => (
 
             <Container fixed maxWidth={"lg"}>
                 <Box paddingY={15}>
-                    <Switch>
-                        <Redirect exact to="/hem" from="/" />
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={<Navigate replace to="/hem" />}
+                        />
 
-                        <Route exact path="/hem">
-                            <Hem />
-                        </Route>
+                        <Route path="/hem" element={<Hem />} />
 
-                        <Route path="/maklarinformation">
-                            <Maklarinformation />
-                        </Route>
+                        <Route
+                            path="/maklarinformation"
+                            element={<Maklarinformation />}
+                        />
 
-                        <Route path={"/boendeinformation/andrahandsuthyrning"}>
-                            <Andrahandsuthyrning />
-                        </Route>
+                        <Route
+                            path={"/boendeinformation/andrahandsuthyrning"}
+                            element={<Andrahandsuthyrning />}
+                        />
 
-                        <Route path={"/boendeinformation/teknik"}>
-                            <Teknik />
-                        </Route>
+                        <Route
+                            path={"/boendeinformation/teknik"}
+                            element={<Teknik />}
+                        />
 
-                        <Route path={"/boendeinformation/forandring-i-lgh"}>
-                            <Forandring />
-                        </Route>
+                        <Route
+                            path={"/boendeinformation/forandring-i-lgh"}
+                            element={<Forandring />}
+                        />
 
-                        <Route path={"/boendeinformation/parkering"}>
-                            <Parkering />
-                        </Route>
+                        <Route
+                            path={"/boendeinformation/parkering"}
+                            element={<Parkering />}
+                        />
 
-                        <Route path={"/boendeinformation/trivselregler"}>
-                            <Trivselregler />
-                        </Route>
+                        <Route
+                            path={"/boendeinformation/trivselregler"}
+                            element={<Trivselregler />}
+                        />
 
-                        <Route path={"/boendeinformation/underhallsansvar"}>
-                            <Underhallsansvar />
-                        </Route>
+                        <Route
+                            path={"/boendeinformation/underhallsansvar"}
+                            element={<Underhallsansvar />}
+                        />
 
                         <Route
                             path={"/boendeinformation/brandskyddsinformation"}
-                        >
-                            <Brandskyddsinformation />
-                        </Route>
+                            element={<Brandskyddsinformation />}
+                        />
 
-                        <Route path={"/boendeinformation/autogiro"}>
-                            <Autogiro />
-                        </Route>
+                        <Route
+                            path={"/boendeinformation/autogiro"}
+                            element={<Autogiro />}
+                        />
 
-                        <Route path="/felanmalan">
-                            <Felanmalan />
-                        </Route>
+                        <Route path="/felanmalan" element={<Felanmalan />} />
 
-                        <Route path="/styrelsen/medlemmar">
-                            <Medlemmar />
-                        </Route>
+                        <Route
+                            path="/styrelsen/medlemmar"
+                            element={<Medlemmar />}
+                        />
 
-                        <Route path="/styrelsen/document">
-                            <Dokument />
-                        </Route>
+                        <Route
+                            path="/styrelsen/document"
+                            element={<Dokument />}
+                        />
 
-                        <Route path="/kontakt">
-                            <Kontakter />
-                        </Route>
+                        <Route path="/kontakt" element={<Kontakter />}></Route>
 
-                        <Route>
-                            <PageNotFound />
-                        </Route>
-                    </Switch>
+                        <Route element={<PageNotFound />}></Route>
+                    </Routes>
                 </Box>
             </Container>
         </HashRouter>

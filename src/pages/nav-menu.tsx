@@ -14,21 +14,19 @@ import {
     Popper,
     styled,
 } from "@material-ui/core";
-import { useHistory, useRouteMatch } from "react-router";
+import { useNavigate, useMatch } from "react-router";
 import { AnimatePresence } from "framer-motion";
 import { SlideDown } from "../animation/slide-down";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
 
 interface IMenu {
     name: string;
-    path?: string;
+    path: string;
     subMenu?: IMenu[];
 }
 
 export const NavMenu = ({ name, path, subMenu = [] }: IMenu) => {
-    const match = useRouteMatch(
-        [path, ...subMenu.map((sm) => sm.path)].filter(Boolean) as string[],
-    );
+    const match = useMatch(`${path}/*`);
     const [triggerElem, setTriggerElem] = useState(null);
     const [openSubmenu, setOpenSubmenu] = useState(false);
 
@@ -106,6 +104,7 @@ export const MobileMenu = ({ isOpen, onClose, menus }: IMobileMenu) => {
                             name={m.name}
                             subMenu={m.subMenu}
                             onSelected={onClose}
+                            path={m.path}
                         />
                     </Fragment>
                 ))}
@@ -116,18 +115,18 @@ export const MobileMenu = ({ isOpen, onClose, menus }: IMobileMenu) => {
 
 interface INestedMobileMenus {
     name: string;
+    path: string;
     subMenu?: IMenu[];
     onSelected?: () => void;
 }
 
 const NestedMobileMenus = ({
     name,
+    path,
     subMenu = [],
     onSelected,
 }: INestedMobileMenus) => {
-    const match = useRouteMatch(
-        subMenu.map((sm) => sm.path).filter(Boolean) as string[],
-    );
+    const match = useMatch(`${path}/*`);
     const [expanded, setExpanded] = useState(!!match);
     const toggleExpand = () => {
         setExpanded(!expanded);
@@ -177,12 +176,12 @@ export const MenuLink = styled(
 }));
 
 export const SingleLink = ({ name, path = "NOT MATCH" }: IMenu) => {
-    const isActive = useRouteMatch(path);
-    const history = useHistory();
+    const isActive = useMatch(path);
+    const navigate = useNavigate();
 
     const go = () => {
         if (path && !isActive) {
-            history.push(path);
+            navigate(path);
         }
     };
 
@@ -203,12 +202,12 @@ const ListLink = ({
     onClick,
     ...rest
 }: IListLinkProps) => {
-    const isActive = useRouteMatch(path);
-    const history = useHistory();
+    const isActive = useMatch(path);
+    const navigate = useNavigate();
 
     const go = () => {
         if (path && !isActive) {
-            history.push(path);
+            navigate(path);
         }
 
         if (onClick) {

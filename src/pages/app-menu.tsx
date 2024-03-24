@@ -45,12 +45,12 @@ export const AppMenu = () => {
                                 name="Mäklarinformation"
                             />
                             <NavMenu
+                                path="/boendeinformation"
                                 name="Boendeinformation"
                                 subMenu={[
                                     {
                                         name: "Andrahandsuthyrning",
-                                        path:
-                                            "/boendeinformation/andrahandsuthyrning",
+                                        path: "/boendeinformation/andrahandsuthyrning",
                                     },
                                     {
                                         name: "Parkering",
@@ -62,23 +62,19 @@ export const AppMenu = () => {
                                     },
                                     {
                                         name: "Förändring i lgh",
-                                        path:
-                                            "/boendeinformation/forandring-i-lgh",
+                                        path: "/boendeinformation/forandring-i-lgh",
                                     },
                                     {
                                         name: "Trivselregler",
-                                        path:
-                                            "/boendeinformation/trivselregler",
+                                        path: "/boendeinformation/trivselregler",
                                     },
                                     {
                                         name: "Underhållsansvar",
-                                        path:
-                                            "/boendeinformation/underhallsansvar",
+                                        path: "/boendeinformation/underhallsansvar",
                                     },
                                     {
                                         name: "Brandskyddsinformation",
-                                        path:
-                                            "/boendeinformation/brandskyddsinformation",
+                                        path: "/boendeinformation/brandskyddsinformation",
                                     },
                                     {
                                         name: "Autogiro",
@@ -90,6 +86,7 @@ export const AppMenu = () => {
 
                             <NavMenu
                                 name="styrelsen"
+                                path="/styrelsen"
                                 subMenu={[
                                     {
                                         name: "Styrelsemedlemmar",
@@ -125,16 +122,15 @@ export const AppMenu = () => {
                                 },
                                 {
                                     name: "Boendeinformation",
+                                    path: "/boendeinformation",
                                     subMenu: [
                                         {
                                             name: "Andrahandsuthyrning",
-                                            path:
-                                                "/boendeinformation/andrahandsuthyrning",
+                                            path: "/boendeinformation/andrahandsuthyrning",
                                         },
                                         {
                                             name: "Parkering",
-                                            path:
-                                                "/boendeinformation/parkering",
+                                            path: "/boendeinformation/parkering",
                                         },
                                         {
                                             name: "teknik",
@@ -142,24 +138,22 @@ export const AppMenu = () => {
                                         },
                                         {
                                             name: "Förändring i lgh",
-                                            path:
-                                                "/boendeinformation/forandring-i-lgh",
+                                            path: "/boendeinformation/forandring-i-lgh",
                                         },
                                         {
                                             name: "Trivselregler",
-                                            path:
-                                                "/boendeinformation/trivselregler",
+                                            path: "/boendeinformation/trivselregler",
                                         },
                                         {
                                             name: "Underhållsansvar",
-                                            path:
-                                                "/boendeinformation/underhallsansvar",
+                                            path: "/boendeinformation/underhallsansvar",
                                         },
                                     ],
                                 },
                                 { name: "Felanmälan", path: "/felanmalan" },
                                 {
                                     name: "styrelsen",
+                                    path: "/styrelsen",
                                     subMenu: [
                                         {
                                             name: "Styrelsemedlemmar",

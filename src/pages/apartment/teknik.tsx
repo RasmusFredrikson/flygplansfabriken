@@ -9,7 +9,6 @@ import {
 } from "../page-container";
 import { Link } from "@material-ui/core";
 import bredband from "../../assets/bredband-tv.pdf";
-import contacts from "../contacts/contacts.json";
 
 export const Teknik = () => {
     return (

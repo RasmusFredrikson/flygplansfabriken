@@ -5,20 +5,12 @@ import {
     PageContainer,
     Paragraph,
     SubHeading,
-    Warn,
 } from "../page-container";
 import contacts from "./contacts.json";
 import { LinkTo } from "./contact-card";
 import { Link } from "@material-ui/core";
 
-const {
-    Fastighetsservice,
-    styrelsen,
-    accounting,
-    parking,
-    elevator,
-    lockService,
-} = contacts;
+const { styrelsen, accounting } = contacts;
 export const Kontakter = () => {
     return (
         <PageContainer>

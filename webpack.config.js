@@ -120,14 +120,9 @@ module.exports = (env, argv) => {
         devServer: {
             hot: true,
             port: 4200,
-            contentBase: sourcePath,
-            https: false,
-            inline: true,
             historyApiFallback: {
                 disableDotRule: true,
             },
-            stats: "minimal",
-            clientLogLevel: "warning",
         },
         devtool: isDev ? "source-map" : false,
     };
