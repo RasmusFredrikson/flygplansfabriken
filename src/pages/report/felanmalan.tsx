@@ -9,7 +9,7 @@ import {
 } from "../page-container";
 import { LinkTo } from "../contacts/contact-card";
 import contacts from "../contacts/contacts.json";
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 
 export const Felanmalan = () => {
     return (

@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import { Box, Divider, Paper, Typography } from "@material-ui/core";
+import { Box, Divider, Paper, Typography } from "@mui/material";
 import { Appear } from "../animation/appear";
 
 export const PageContainer = ({ children }: PropsWithChildren<any>) => {

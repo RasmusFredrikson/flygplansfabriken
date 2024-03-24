@@ -8,8 +8,8 @@ import {
     Toolbar,
     Typography,
     useTheme,
-} from "@material-ui/core";
-import { Menu } from "@material-ui/icons";
+} from "@mui/material";
+import { Menu } from "@mui/icons-material";
 import React, { useState } from "react";
 import { MobileMenu, NavMenu, SingleLink } from "./nav-menu";
 

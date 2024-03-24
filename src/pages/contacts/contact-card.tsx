@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useMemo } from "react";
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 
 interface ILinkProps {
     type: "Tel" | "Mail";

@@ -6,7 +6,7 @@ import {
     TableCell,
     TableRow,
     Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import React from "react";
 import albinImg from "../../assets/board-members/albin.jpg";
 import kandanImg from "../../assets/board-members/kandan.jpg";

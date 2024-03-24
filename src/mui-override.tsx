@@ -3,7 +3,7 @@ import {
     CssBaseline,
     responsiveFontSizes,
     ThemeProvider,
-} from "@material-ui/core";
+} from "@mui/material";
 import React, { PropsWithChildren } from "react";
 
 export const MuiOverride = responsiveFontSizes(

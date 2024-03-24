@@ -7,7 +7,7 @@ import {
     SubHeading,
     Warn,
 } from "../page-container";
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 import bredband from "../../assets/bredband-tv.pdf";
 
 export const Teknik = () => {

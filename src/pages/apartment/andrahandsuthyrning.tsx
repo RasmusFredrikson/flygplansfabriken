@@ -1,4 +1,4 @@
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 import React from "react";
 import andrahand from "../../assets/andrahand.pdf";
 import { LinkTo } from "../contacts/contact-card";

@@ -13,11 +13,11 @@ import {
     Paper,
     Popper,
     styled,
-} from "@material-ui/core";
+} from "@mui/material";
 import { useNavigate, useMatch } from "react-router";
 import { AnimatePresence } from "framer-motion";
 import { SlideDown } from "../animation/slide-down";
-import { ExpandLess, ExpandMore } from "@material-ui/icons";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 interface IMenu {
     name: string;

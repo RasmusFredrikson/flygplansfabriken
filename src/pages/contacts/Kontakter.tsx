@@ -8,7 +8,7 @@ import {
 } from "../page-container";
 import contacts from "./contacts.json";
 import { LinkTo } from "./contact-card";
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 
 const { styrelsen, accounting } = contacts;
 export const Kontakter = () => {

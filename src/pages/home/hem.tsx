@@ -1,6 +1,6 @@
 import React from "react";
 import { Heading, PageContainer, Paragraph } from "../page-container";
-import { Box } from "@material-ui/core";
+import { Box } from "@mui/material";
 import homeBg from "../../assets/framsidan2.png";
 
 export const Hem = () => (

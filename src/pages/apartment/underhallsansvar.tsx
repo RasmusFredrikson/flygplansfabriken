@@ -6,7 +6,7 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { Link, Typography } from "@material-ui/core";
+import { Link, Typography } from "@mui/material";
 
 export const Underhallsansvar = () => {
     return (

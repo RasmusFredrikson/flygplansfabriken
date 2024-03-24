@@ -1,4 +1,4 @@
-import { Box, Link } from "@material-ui/core";
+import { Box, Link } from "@mui/material";
 import React from "react";
 import ar2017 from "../../assets/2016-2017.pdf";
 import ar2018 from "../../assets/2017-2018.pdf";

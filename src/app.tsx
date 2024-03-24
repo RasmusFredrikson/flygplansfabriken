@@ -1,4 +1,4 @@
-import { Box, Container } from "@material-ui/core";
+import { Box, Container } from "@mui/material";
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
