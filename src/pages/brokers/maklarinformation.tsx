@@ -68,7 +68,8 @@ export const Maklarinformation = () => {
 
             <Paragraph>
                 <b>Har föreningen några avgiftsförändringar planerade?</b>:
-                Avgiften förväntas vara oförändrad 2022
+                Avgiftsändringar kommuniceras via mail till föreningens
+                medlemmar.
                 <br />
                 <b>Kommande renoveringar?</b>: Inget planerat
                 <br />
