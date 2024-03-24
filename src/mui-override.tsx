@@ -112,7 +112,7 @@ export const MuiOverride = responsiveFontSizes(
             MuiListItem: {
                 styleOverrides: {
                     root: {
-                        "&$selected, &$selected:hover": {
+                        "&.Mui-selected, &.Mui-selected:hover": {
                             backgroundColor: "#F47A1F",
                             color: "white",
                         },

@@ -1,4 +1,4 @@
-import React, { forwardRef, Fragment, useMemo, useState } from "react";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import {
     Box,
     ButtonBase,
@@ -14,10 +14,10 @@ import {
     Popper,
     styled,
 } from "@mui/material";
-import { useNavigate, useMatch } from "react-router";
 import { AnimatePresence } from "framer-motion";
+import React, { Fragment, forwardRef, useState } from "react";
+import { useMatch, useNavigate } from "react-router";
 import { SlideDown } from "../animation/slide-down";
-import { ExpandLess, ExpandMore } from "@mui/icons-material";
 
 interface IMenu {
     name: string;
@@ -26,13 +26,9 @@ interface IMenu {
 }
 
 export const NavMenu = ({ name, path, subMenu = [] }: IMenu) => {
-    const match = useMatch(`${path}/*`);
+    const isActive = useMatch(`${path}/*`);
     const [triggerElem, setTriggerElem] = useState(null);
     const [openSubmenu, setOpenSubmenu] = useState(false);
-
-    const isActive = useMemo(() => {
-        return match;
-    }, [match, path]);
 
     const closeMenu = () => {
         setOpenSubmenu(false);
@@ -42,7 +38,7 @@ export const NavMenu = ({ name, path, subMenu = [] }: IMenu) => {
         <ClickAwayListener onClickAway={() => setOpenSubmenu(false)}>
             <div>
                 <MenuLink
-                    isActive={isActive}
+                    isActive={!!isActive}
                     onClick={() => setOpenSubmenu(!openSubmenu)}
                     ref={setTriggerElem}
                 >
@@ -53,12 +49,7 @@ export const NavMenu = ({ name, path, subMenu = [] }: IMenu) => {
                     open={openSubmenu}
                     anchorEl={triggerElem}
                     placement={"bottom-start"}
-                    modifiers={{
-                        offset: {
-                            enabled: true,
-                            padding: 0,
-                        },
-                    }}
+                    modifiers={[{ name: "offset", options: { offset: [0] } }]}
                     keepMounted
                 >
                     <AnimatePresence>
@@ -186,7 +177,7 @@ export const SingleLink = ({ name, path = "NOT MATCH" }: IMenu) => {
     };
 
     return (
-        <MenuLink isActive={isActive} onClick={go}>
+        <MenuLink isActive={!!isActive} onClick={go}>
             {name}
         </MenuLink>
     );
