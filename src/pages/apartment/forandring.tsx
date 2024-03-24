@@ -65,7 +65,7 @@ export const Forandring = () => {
 
             <Paragraph>
                 För att ansöka om att ändringar av din bostad behöver du fylla i{" "}
-                <Link href={bostadsandring}>
+                <Link href={bostadsandring} underline="hover">
                     Ansökan om tillstånd för ändring i bostadsrättslägenhet
                 </Link>
                 . Ansökan skickas till{" "}

@@ -30,7 +30,7 @@ export const Kontakter = () => {
 
             <Paragraph>
                 <b>Logga in</b> på{" "}
-                <Link href={accounting.homepage}>mina sidor</Link> hos{" "}
+                <Link href={accounting.homepage} underline="hover">mina sidor</Link> hos{" "}
                 {accounting.name}.
                 <br />
                 Inloggningsuppgifter hittar du på din avgiftsavi.

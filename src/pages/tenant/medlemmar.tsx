@@ -47,7 +47,7 @@ export const Medlemmar = () => {
                     <Typography variant="body1">
                         Vill du vara med i styrelsen för att bidra och driva
                         olika gemensamma projekt, tveka inte att{" "}
-                        <Link href={`mailto:${contacts.styrelsen.email}`}>
+                        <Link href={`mailto:${contacts.styrelsen.email}`} underline="hover">
                             kontakta oss
                         </Link>
                         .
