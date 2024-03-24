@@ -38,7 +38,7 @@ export const AppMenu = () => {
                     </Typography>
 
                     <Box display="flex" marginLeft="auto">
-                        <Hidden smDown>
+                        <Hidden lgDown>
                             <SingleLink path="/hem" name="Hem" />
                             <SingleLink
                                 path="/maklarinformation"
@@ -108,7 +108,7 @@ export const AppMenu = () => {
                                 color="primary"
                                 aria-label="menu"
                                 onClick={() => setMobileMenu(!openMobileMenu)}
-                            >
+                                size="large">
                                 <Menu />
                             </IconButton>
                         </Hidden>
