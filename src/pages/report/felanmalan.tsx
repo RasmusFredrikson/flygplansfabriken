@@ -52,7 +52,8 @@ export const Felanmalan = () => {
                 <Link
                     color={"secondary"}
                     href={contacts.Fastighetsservice.homePage}
-                    underline="hover">
+                    underline="hover"
+                >
                     {contacts.Fastighetsservice.homePage}
                 </Link>
                 <br />
@@ -101,7 +102,10 @@ export const Felanmalan = () => {
                 Fastighetsskötsel.
                 <br />
                 Webbsida för felamnälan:{" "}
-                <Link href={contacts.Fastighetsservice.homePage} underline="hover">
+                <Link
+                    href={contacts.Fastighetsservice.homePage}
+                    underline="hover"
+                >
                     {contacts.Fastighetsservice.homePage}
                 </Link>
                 <br />

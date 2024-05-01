@@ -18,7 +18,11 @@ export const LinkTo = ({ type, children }: PropsWithChildren<ILinkProps>) => {
     }, []);
 
     return (
-        <Link color={"secondary"} href={`${meta}:${children}`} underline="hover">
+        <Link
+            color={"secondary"}
+            href={`${meta}:${children}`}
+            underline="hover"
+        >
             {children}
         </Link>
     );

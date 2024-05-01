@@ -28,7 +28,9 @@ export const Dokument = () => {
             <SubHeading>Stadgar</SubHeading>
 
             <Paragraph>
-                <Link href={stadgar2019} underline="hover">Stadgar.pdf</Link>
+                <Link href={stadgar2019} underline="hover">
+                    Stadgar.pdf
+                </Link>
             </Paragraph>
 
             <Hr />
@@ -36,27 +38,39 @@ export const Dokument = () => {
             <SubHeading>Årsredovisningar</SubHeading>
 
             <Paragraph>
-                <Link href={ar2022} underline="hover">Årsredovisning 2022.pdf</Link>
+                <Link href={ar2022} underline="hover">
+                    Årsredovisning 2022.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2021} underline="hover">Årsredovisning 2021.pdf</Link>
+                <Link href={ar2021} underline="hover">
+                    Årsredovisning 2021.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2020} underline="hover">Årsredovisning 2020.pdf</Link>
+                <Link href={ar2020} underline="hover">
+                    Årsredovisning 2020.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2019} underline="hover">Årsredovisning 2019.pdf</Link>
+                <Link href={ar2019} underline="hover">
+                    Årsredovisning 2019.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2018} underline="hover">Årsredovisning 2018.pdf</Link>
+                <Link href={ar2018} underline="hover">
+                    Årsredovisning 2018.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2017} underline="hover">Årsredovisning 2017.pdf</Link>
+                <Link href={ar2017} underline="hover">
+                    Årsredovisning 2017.pdf
+                </Link>
             </Paragraph>
 
             <Hr />
@@ -64,7 +78,9 @@ export const Dokument = () => {
             <SubHeading>Ansökan andrahandsuthyrning</SubHeading>
 
             <Paragraph>
-                <Link href={andrahand} underline="hover">Andrahandsuthyrning.pdf</Link>
+                <Link href={andrahand} underline="hover">
+                    Andrahandsuthyrning.pdf
+                </Link>
             </Paragraph>
 
             <Hr />
@@ -72,7 +88,9 @@ export const Dokument = () => {
             <SubHeading>Ansökan autogiro</SubHeading>
 
             <Paragraph>
-                <Link href={autogiro} underline="hover">Autogiro.pdf</Link>
+                <Link href={autogiro} underline="hover">
+                    Autogiro.pdf
+                </Link>
             </Paragraph>
 
             <Hr />
@@ -82,7 +100,9 @@ export const Dokument = () => {
             </SubHeading>
 
             <Paragraph>
-                <Link href={bostadsandring} underline="hover">Bostadsändring.pdf</Link>
+                <Link href={bostadsandring} underline="hover">
+                    Bostadsändring.pdf
+                </Link>
             </Paragraph>
         </PageContainer>
     );
