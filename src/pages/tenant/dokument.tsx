@@ -6,6 +6,7 @@ import ar2019 from "../../assets/2019.pdf";
 import ar2020 from "../../assets/2020.pdf";
 import ar2021 from "../../assets/2021.pdf";
 import ar2022 from "../../assets/2022.pdf";
+import ar2023 from "../../assets/2023.pdf";
 import andrahand from "../../assets/andrahand.pdf";
 import autogiro from "../../assets/autogiro.pdf";
 import bostadsandring from "../../assets/bostadsandring.pdf";
@@ -36,6 +37,12 @@ export const Dokument = () => {
             <Hr />
 
             <SubHeading>Årsredovisningar</SubHeading>
+
+            <Paragraph>
+                <Link href={ar2023} underline="hover">
+                    Årsredovisning 2023.pdf
+                </Link>
+            </Paragraph>
 
             <Paragraph>
                 <Link href={ar2022} underline="hover">
