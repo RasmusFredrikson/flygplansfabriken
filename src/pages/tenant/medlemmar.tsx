@@ -9,29 +9,24 @@ import {
 } from "@mui/material";
 import React from "react";
 import albinImg from "../../assets/board-members/albin.jpg";
+import charalamposImg from "../../assets/board-members/charalampos.jpg";
 import kandanImg from "../../assets/board-members/kandan.jpg";
-import peterImg from "../../assets/board-members/peter.jpg";
 import rasmusImg from "../../assets/board-members/rasmus.jpg";
 import contacts from "../contacts/contacts.json";
 import { Heading, PageContainer, SubHeading } from "../page-container";
 
 export const Medlemmar = () => {
     const members = [
-        { img: peterImg, name: "Peter Andersson", position: "Ordförande" },
+        { img: kandanImg, name: "Kandan Bakhtiar Ali", position: "Ordförande" },
         { img: albinImg, name: "Albin Ullmark", position: "Styrelseledamot" },
-        {
-            img: null,
-            name: "Kristian Andersson",
-            position: "Styrelseledamot",
-        },
         {
             img: rasmusImg,
             name: "Rasmus Fredrikson",
             position: "Styrelseledamot",
         },
         {
-            img: kandanImg,
-            name: "Kandan Bakhtiar Ali",
+            img: charalamposImg,
+            name: "Charalampos Antonopoulos",
             position: "Suppleant",
         },
     ];
