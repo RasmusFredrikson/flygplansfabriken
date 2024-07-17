@@ -2,7 +2,7 @@ import { Box, Divider, Paper, Typography } from "@mui/material";
 import React, { PropsWithChildren } from "react";
 import { Appear } from "../animation/appear";
 
-export const PageContainer = ({ children }: PropsWithChildren<any>) => {
+export const PageContainer = ({ children }: PropsWithChildren) => {
     return (
         <Appear>
             <Paper>
@@ -12,7 +12,7 @@ export const PageContainer = ({ children }: PropsWithChildren<any>) => {
     );
 };
 
-export const Heading = ({ children }: PropsWithChildren<any>) => {
+export const Heading = ({ children }: PropsWithChildren) => {
     return (
         <Typography variant={"h4"} paragraph>
             {children}
@@ -20,7 +20,7 @@ export const Heading = ({ children }: PropsWithChildren<any>) => {
     );
 };
 
-export const SubHeading = ({ children }: PropsWithChildren<any>) => {
+export const SubHeading = ({ children }: PropsWithChildren) => {
     return (
         <Typography variant={"h6"} paragraph>
             {children}
@@ -28,7 +28,7 @@ export const SubHeading = ({ children }: PropsWithChildren<any>) => {
     );
 };
 
-export const Paragraph = ({ children }: PropsWithChildren<any>) => {
+export const Paragraph = ({ children }: PropsWithChildren) => {
     return (
         <Typography variant={"body1"} paragraph>
             {children}
@@ -46,7 +46,7 @@ export const Hr = () => {
     );
 };
 
-export const Warn = ({ children }: PropsWithChildren<any>) => {
+export const Warn = ({ children }: PropsWithChildren) => {
     return (
         <Typography variant={"body1"} color={"error"} paragraph>
             {children}

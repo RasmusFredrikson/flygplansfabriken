@@ -92,9 +92,9 @@ const App = () => (
                             element={<Dokument />}
                         />
 
-                        <Route path="/kontakt" element={<Kontakter />}></Route>
+                        <Route path="/kontakt" element={<Kontakter />} />
 
-                        <Route element={<PageNotFound />}></Route>
+                        <Route element={<PageNotFound />} />
                     </Routes>
                 </Box>
             </Container>

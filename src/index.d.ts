@@ -1,36 +1,36 @@
 declare module "*.png" {
-    const value: any;
+    const value;
     export default value;
 }
 
 declare module "*.webp" {
-    const value: any;
+    const value;
     export default value;
 }
 
 declare module "*.jpg" {
-    const value: any;
+    const value;
     export default value;
 }
 
 declare module "*.pdf" {
-    const value: any;
+    const value;
     export default value;
-    export const ReactComponent: any;
+    export const ReactComponent;
 }
 
 declare module "*.svg" {
-    const value: any;
+    const value;
     export default value;
-    export const ReactComponent: any;
+    export const ReactComponent;
 }
 
 declare module "*.woff" {
-    const value: any;
+    const value;
     export default value;
 }
 
 declare module "*.woff2" {
-    const value: any;
+    const value;
     export default value;
 }

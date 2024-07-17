@@ -136,7 +136,7 @@ export const MuiOverride = responsiveFontSizes(
     }),
 );
 
-export const GlobalStyle = ({ children }: PropsWithChildren<any>) => {
+export const GlobalStyle = ({ children }: PropsWithChildren) => {
     return (
         <StyledEngineProvider injectFirst>
             <ThemeProvider theme={MuiOverride}>

@@ -12,6 +12,7 @@ import {
     ListItemText,
     Paper,
     Popper,
+    Theme,
     styled,
 } from "@mui/material";
 import { AnimatePresence } from "framer-motion";
@@ -152,17 +153,18 @@ interface IMenuProps extends ButtonProps {
 }
 
 export const MenuLink = styled(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     forwardRef(({ isActive, ...rest }: IMenuProps, ref: any) => (
         <ButtonBase ref={ref} {...rest} />
     )),
-)((props: any) => ({
-    minHeight: props.theme.mixins.toolbar.minHeight,
+)((props: { theme?: Theme; isActive: boolean }) => ({
+    minHeight: props.theme?.mixins.toolbar.minHeight,
     color: "white",
     padding: "0 1rem",
     textTransform: "uppercase",
     borderBottom: "solid 3px",
     borderBottomColor: props.isActive
-        ? props.theme.palette.secondary.main
+        ? props.theme?.palette.secondary.main
         : "transparent",
 }));
 
@@ -207,6 +209,7 @@ const ListLink = ({
     };
 
     return (
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <ListItem button selected={!!isActive} onClick={go} {...(rest as any)}>
             <ListItemText>{name}</ListItemText>
         </ListItem>
