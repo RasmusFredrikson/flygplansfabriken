@@ -8,10 +8,10 @@ import {
     Typography,
 } from "@mui/material";
 import React from "react";
-import albinImg from "../../assets/board-members/albin.jpg";
-import charalamposImg from "../../assets/board-members/charalampos.jpg";
-import kandanImg from "../../assets/board-members/kandan.jpg";
-import rasmusImg from "../../assets/board-members/rasmus.jpg";
+import albinImg from "../../assets/board-members/albin.webp";
+import charalamposImg from "../../assets/board-members/charalampos.webp";
+import kandanImg from "../../assets/board-members/kandan.webp";
+import rasmusImg from "../../assets/board-members/rasmus.webp";
 import contacts from "../contacts/contacts.json";
 import { Heading, PageContainer, SubHeading } from "../page-container";
 

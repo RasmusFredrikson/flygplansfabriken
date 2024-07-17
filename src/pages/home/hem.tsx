@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import homeBg from "../../assets/framsidan2.png";
+import homeBg from "../../assets/framsidan.webp";
 import { Heading, PageContainer, Paragraph } from "../page-container";
 
 export const Hem = () => (
