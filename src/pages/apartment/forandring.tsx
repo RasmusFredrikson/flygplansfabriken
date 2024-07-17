@@ -1,4 +1,8 @@
+import { Link, Typography } from "@mui/material";
 import React from "react";
+import bostadsandring from "../../assets/bostadsandring.pdf";
+import { LinkTo } from "../contacts/contact-card";
+import contacts from "../contacts/contacts.json";
 import {
     Heading,
     Hr,
@@ -6,10 +10,6 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { LinkTo } from "../contacts/contact-card";
-import contacts from "../contacts/contacts.json";
-import { Link, Typography } from "@mui/material";
-import bostadsandring from "../../assets/bostadsandring.pdf";
 
 export const Forandring = () => {
     return (

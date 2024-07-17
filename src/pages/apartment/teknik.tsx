@@ -1,4 +1,6 @@
+import { Link } from "@mui/material";
 import React from "react";
+import bredband from "../../assets/bredband-tv.pdf";
 import {
     Heading,
     Hr,
@@ -7,8 +9,6 @@ import {
     SubHeading,
     Warn,
 } from "../page-container";
-import { Link } from "@mui/material";
-import bredband from "../../assets/bredband-tv.pdf";
 
 export const Teknik = () => {
     return (

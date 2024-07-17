@@ -2,6 +2,7 @@ import { Link } from "@mui/material";
 import React from "react";
 import andrahand from "../../assets/andrahand.pdf";
 import { LinkTo } from "../contacts/contact-card";
+import contacts from "../contacts/contacts.json";
 import {
     Heading,
     Hr,
@@ -9,7 +10,6 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import contacts from "../contacts/contacts.json";
 
 export const Andrahandsuthyrning = () => {
     return (
