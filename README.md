@@ -8,7 +8,13 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app 
 
 Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Deploy with FTP
+## Automatic deploy
+
+Github actions using [main.yml](.github/workflows/main.yml) should handle the deployment automatically upon push to master.
+
+## Manually deploy with FTP
+
+If for some reason the automatic deploy doesn't work you can manually update it using this guide.
 
 1. Log in to Loopia and go to [FTP-Konton](https://customerzone.loopia.se/ftp/?popup=1) to find your credentials.
 2. If you don't know the password, you can either create a new account or edit one of the existing ones. Just make sure no one else is using that account.
