@@ -35,7 +35,8 @@ export const Kontakter = () => {
                 <br />
                 Inloggningsuppgifter hittar du på din avgiftsavi.
                 <br />
-                På sidan hittar du även blankett för Autogiro.
+                På sidan hittar du även blankett för <b>Autogiro</b> och utdrag
+                från <b>lägenhetsregistret.</b>
             </Paragraph>
 
             <Hr />
