@@ -1,0 +1,33 @@
+name: 🚀 Deploy website on push
+on:
+    push:
+        branches:
+            - master # Trigger the workflow on pushes to the master branch
+jobs:
+    web-deploy:
+        name: 🎉 Deploy
+        runs-on: ubuntu-latest
+        steps:
+            - name: 🚚 Checkout branch that triggered the workflow
+              uses: actions/checkout@v4
+
+            - name: Use Node.js 20
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "20"
+
+            - name: 🔨 Build Project
+              run: |
+                  npm install
+                  npm run build
+
+            - name: 📂 Upload files
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              with:
+                  server: ftpcluster.loopia.se
+                  username: ${{ secrets.FTP_USERNAME }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  local-dir: ./dist # Local directory to upload
+                  remote-dir: /brf-flygplansfabriken.se/public_html # Remote directory to upload to
+                  git-ftp-args: --delete # Delete remote files before uploading
+                  dry-run: true
