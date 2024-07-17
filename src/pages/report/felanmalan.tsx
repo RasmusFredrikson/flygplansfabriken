@@ -1,4 +1,7 @@
+import { Link } from "@mui/material";
 import React from "react";
+import { LinkTo } from "../contacts/contact-card";
+import contacts from "../contacts/contacts.json";
 import {
     Heading,
     Hr,
@@ -7,9 +10,6 @@ import {
     SubHeading,
     Warn,
 } from "../page-container";
-import { LinkTo } from "../contacts/contact-card";
-import contacts from "../contacts/contacts.json";
-import { Link } from "@mui/material";
 
 export const Felanmalan = () => {
     return (
@@ -52,7 +52,6 @@ export const Felanmalan = () => {
                 <Link
                     color={"secondary"}
                     href={contacts.Fastighetsservice.homePage}
-                    underline="hover"
                 >
                     {contacts.Fastighetsservice.homePage}
                 </Link>
@@ -102,10 +101,7 @@ export const Felanmalan = () => {
                 Fastighetsskötsel.
                 <br />
                 Webbsida för felamnälan:{" "}
-                <Link
-                    href={contacts.Fastighetsservice.homePage}
-                    underline="hover"
-                >
+                <Link href={contacts.Fastighetsservice.homePage}>
                     {contacts.Fastighetsservice.homePage}
                 </Link>
                 <br />

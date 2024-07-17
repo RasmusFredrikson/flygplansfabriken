@@ -1,3 +1,4 @@
+import { Link, Typography } from "@mui/material";
 import React from "react";
 import {
     Heading,
@@ -6,7 +7,6 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { Link, Typography } from "@mui/material";
 
 export const Underhallsansvar = () => {
     return (
@@ -17,9 +17,7 @@ export const Underhallsansvar = () => {
                 lägenhet i föreningen – bostadsrätt. Med medlemskapet och
                 bostadsrätten följer ett underhållsansvar. Detta ansvar framgår
                 av 35 § i{" "}
-                <Link href="/#/styrelsen/document" underline="hover">
-                    föreningens stadgar
-                </Link>{" "}
+                <Link href="/#/styrelsen/document">föreningens stadgar</Link>{" "}
                 enligt nedan.
             </Paragraph>
 

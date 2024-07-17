@@ -1,5 +1,5 @@
-import React, { PropsWithChildren, useMemo } from "react";
 import { Link } from "@mui/material";
+import React, { PropsWithChildren, useMemo } from "react";
 
 interface ILinkProps {
     type: "Tel" | "Mail";
@@ -18,11 +18,7 @@ export const LinkTo = ({ type, children }: PropsWithChildren<ILinkProps>) => {
     }, []);
 
     return (
-        <Link
-            color={"secondary"}
-            href={`${meta}:${children}`}
-            underline="hover"
-        >
+        <Link color={"secondary"} href={`${meta}:${children}`}>
             {children}
         </Link>
     );

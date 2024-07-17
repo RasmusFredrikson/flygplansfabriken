@@ -13,7 +13,7 @@ export const Autogiro = () => {
             <Paragraph>
                 Bostadsrättsavgiften kan betalas per autogiro och kan ansökas om
                 genom att fylla i en{" "}
-                <Link href={autogiro} target="_blank" underline="hover">
+                <Link href={autogiro} target="_blank">
                     ansökningsblankett
                 </Link>
                 .
@@ -36,7 +36,7 @@ export const Autogiro = () => {
                 Autogirofunktionen på banken.
                 <br />
                 Mer information finns i{" "}
-                <Link href={autogiro} target="_blank" underline="hover">
+                <Link href={autogiro} target="_blank">
                     ansökningsblanketten
                 </Link>
                 .

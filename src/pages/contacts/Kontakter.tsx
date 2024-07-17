@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import React from "react";
 import {
     Heading,
@@ -6,9 +7,8 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import contacts from "./contacts.json";
 import { LinkTo } from "./contact-card";
-import { Link } from "@mui/material";
+import contacts from "./contacts.json";
 
 const { styrelsen, accounting } = contacts;
 export const Kontakter = () => {
@@ -30,10 +30,8 @@ export const Kontakter = () => {
 
             <Paragraph>
                 <b>Logga in</b> på{" "}
-                <Link href={accounting.homepage} underline="hover">
-                    mina sidor
-                </Link>{" "}
-                hos {accounting.name}.
+                <Link href={accounting.homepage}>mina sidor</Link> hos{" "}
+                {accounting.name}.
                 <br />
                 Inloggningsuppgifter hittar du på din avgiftsavi.
                 <br />

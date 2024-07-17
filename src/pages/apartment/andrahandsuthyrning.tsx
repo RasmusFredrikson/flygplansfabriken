@@ -18,9 +18,7 @@ export const Andrahandsuthyrning = () => {
 
             <Paragraph>
                 Regler gällande andrahandsuthyrning finns i föreningens{" "}
-                <Link href="/#/styrelsen/document" underline="hover">
-                    Stadgar
-                </Link>
+                <Link href="/#/styrelsen/document">Stadgar</Link>
             </Paragraph>
 
             <Hr />
@@ -30,7 +28,7 @@ export const Andrahandsuthyrning = () => {
             <Paragraph>
                 För att ansöka om att hyra ut din bostad i andra hand behöver du
                 fylla i{" "}
-                <Link href={andrahand} target="_blank" underline="hover">
+                <Link href={andrahand} target="_blank">
                     ansökningsblankett
                 </Link>
                 .
