@@ -27,7 +27,7 @@ jobs:
                   server: ftpcluster.loopia.se
                   username: ${{ secrets.FTP_USERNAME }}
                   password: ${{ secrets.FTP_PASSWORD }}
-                  local-dir: ./dist # Local directory to upload
-                  remote-dir: /brf-flygplansfabriken.se/public_html # Remote directory to upload to
+                  local-dir: ./dist/ # Local directory to upload
+                  remote-dir: /brf-flygplansfabriken.se/public_html/ # Remote directory to upload to
                   git-ftp-args: --delete # Delete remote files before uploading
                   dry-run: true
