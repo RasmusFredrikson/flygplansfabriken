@@ -20,7 +20,7 @@ export const Hem = () => (
         </Paragraph>
 
         <Box>
-            <img src={homeBg} width={"100%"} />
+            <img src={homeBg} width={"100%"} alt="Framsidan av huset" />
         </Box>
     </PageContainer>
 );

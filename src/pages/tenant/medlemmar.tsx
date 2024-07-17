@@ -89,6 +89,7 @@ export const Medlemmar = () => {
                                 style={{ filter: "grayscale(100%)" }}
                                 src={member.img}
                                 width={"200px"}
+                                alt={member.name}
                             />
                             <div>{member.name}</div>
                         </Grid>
