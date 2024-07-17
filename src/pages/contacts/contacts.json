@@ -23,22 +23,22 @@
         ]
     },
     "Fastighetsservice": {
-        "name": "Fastighetsskötsel AB",
+        "name": "Fastighetsägarna Service AB",
         "phone": [
             {
-                "number": "010-207 03 50",
-                "openingHours": "Vardagar 08.00-16.00"
+                "number": "08-617 76 00",
+                "openingHours": "Mån - Tors 07.00-17.00, Fre 07.00-16.00 (Avvikelser förekommer kring röda dagar)"
             },
             {
-                "number": " 010-207 03 70",
-                "openingHours": "Överig tid"
+                "number": "08-657 64 50",
+                "openingHours": "Övrig tid"
             }
         ],
-        "homePage": "https://fastighetsskotsel.se/kontakta-oss",
-        "email": "info@fastighetsskotsel.se"
+        "homePage": "https://www.fastighetsagarna.se/kontakt/fastighetsagarna-service-stockholm",
+        "email": "kundservice@fastighetsagarna.se"
     },
     "accounting": {
-        "name": "Brf ekonomen",
+        "name": "Brf Ekonomen",
         "address": {
             "streetName": "Fredsgatan 13",
             "code": "149 30",

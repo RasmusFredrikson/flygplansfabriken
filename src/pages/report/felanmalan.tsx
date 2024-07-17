@@ -23,11 +23,10 @@ export const Felanmalan = () => {
                 upptäckt.
                 <br />
                 <br />
-                Föreningen har för närvarande avtal med bolaget
-                Fastighetsskötsel AB rörande fastighetsskötsel.
-                Fastighetsskötsel AB har en veckovis tillsyn av fastigheten. Då
-                åtgärdas också de fel som är anmälda, såvida felet inte är av
-                akut karaktär.
+                Föreningen har för närvarande avtal med bolaget Fastighetsägarna
+                Service AB rörande fastighetsskötsel. Fastighetsägarna Service
+                AB har en veckovis tillsyn av fastigheten. Då åtgärdas också de
+                fel som är anmälda, såvida felet inte är av akut karaktär.
                 <br />
                 <br />
                 Är du osäker på något eller om du har du några frågor kring
@@ -48,7 +47,7 @@ export const Felanmalan = () => {
                 </LinkTo>{" "}
                 ({contacts.Fastighetsservice.phone[0].openingHours})
                 <br />
-                Webbsida för felamnälan:{" "}
+                Webbsida för felanmälan:{" "}
                 <Link
                     color={"secondary"}
                     href={contacts.Fastighetsservice.homePage}
@@ -98,9 +97,9 @@ export const Felanmalan = () => {
 
             <Paragraph>
                 <b>Kontakta</b> <br />
-                Fastighetsskötsel.
+                Fastighetsägarna Service AB.
                 <br />
-                Webbsida för felamnälan:{" "}
+                Webbsida för felanmälan:{" "}
                 <Link href={contacts.Fastighetsservice.homePage}>
                     {contacts.Fastighetsservice.homePage}
                 </Link>
@@ -120,9 +119,9 @@ export const Felanmalan = () => {
 
             <Warn>
                 Observera att bostadsrättsinnehavaren ansvarar för fel på sin
-                enskilda lägenhet. Det går bra att kontakta Fastighetsskötsel,
-                men om felet inte täcks av föreningens ansvar debiteras
-                bostadsrättsinnehavaren för arbetskostnaden.
+                enskilda lägenhet. Det går bra att kontakta Fastighetsägarna
+                Service AB, men om felet inte täcks av föreningens ansvar
+                debiteras bostadsrättsinnehavaren för arbetskostnaden.
             </Warn>
 
             <Hr />
