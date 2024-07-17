@@ -30,4 +30,3 @@ jobs:
                   local-dir: ./dist/ # Local directory to upload
                   server-dir: /brf-flygplansfabriken.se/public_html/ # Remote directory to upload to
                   dangerous-clean-slate: true # Delete remote files before uploading
-                  dry-run: true
