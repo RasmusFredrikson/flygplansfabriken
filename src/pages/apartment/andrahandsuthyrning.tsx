@@ -18,7 +18,7 @@ export const Andrahandsuthyrning = () => {
 
             <Paragraph>
                 Regler gällande andrahandsuthyrning finns i föreningens{" "}
-                <Link href="/styrelsen/document">Stadgar</Link>
+                <Link href="/#/styrelsen/document">Stadgar</Link>
             </Paragraph>
 
             <Hr />

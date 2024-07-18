@@ -1,7 +1,7 @@
 import { Box, Container } from "@mui/material";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { PageNotFound } from "./404";
 import { GlobalStyle } from "./mui-override";
 import { Andrahandsuthyrning } from "./pages/apartment/andrahandsuthyrning";
@@ -22,7 +22,7 @@ import { Medlemmar } from "./pages/tenant/medlemmar";
 
 const App = () => (
     <Box style={{ background: "#cdcdcd" }}>
-        <BrowserRouter>
+        <HashRouter>
             <AppMenu />
 
             <Container fixed maxWidth={"lg"}>
@@ -98,7 +98,7 @@ const App = () => (
                     </Routes>
                 </Box>
             </Container>
-        </BrowserRouter>
+        </HashRouter>
     </Box>
 );
 
