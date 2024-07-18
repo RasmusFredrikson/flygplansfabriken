@@ -17,7 +17,7 @@ export const Underhallsansvar = () => {
                 lägenhet i föreningen – bostadsrätt. Med medlemskapet och
                 bostadsrätten följer ett underhållsansvar. Detta ansvar framgår
                 av 35 § i{" "}
-                <Link href="/#/styrelsen/document">föreningens stadgar</Link>{" "}
+                <Link href="/styrelsen/document">föreningens stadgar</Link>{" "}
                 enligt nedan.
             </Paragraph>
 
