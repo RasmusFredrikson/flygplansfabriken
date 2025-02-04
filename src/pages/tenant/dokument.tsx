@@ -7,10 +7,9 @@ import ar2020 from "../../assets/2020.pdf";
 import ar2021 from "../../assets/2021.pdf";
 import ar2022 from "../../assets/2022.pdf";
 import ar2023 from "../../assets/2023.pdf";
-import andrahand from "../../assets/andrahand.pdf";
-import autogiro from "../../assets/autogiro.pdf";
 import bostadsandring from "../../assets/bostadsandring.pdf";
 import stadgar2019 from "../../assets/stadgar2019.pdf";
+import { accounting } from "../contacts/contacts.json";
 import {
     Heading,
     Hr,
@@ -69,15 +68,17 @@ export const Dokument = () => {
             <SubHeading>Ansökan andrahandsuthyrning</SubHeading>
 
             <Paragraph>
-                <Link href={andrahand}>Andrahandsuthyrning.pdf</Link>
+                <Link href={accounting.hrefs.andrahandsuthyrning}>
+                    Andrahandsuthyrning
+                </Link>
             </Paragraph>
 
             <Hr />
 
-            <SubHeading>Ansökan autogiro</SubHeading>
+            <SubHeading>Anmälam autogiro</SubHeading>
 
             <Paragraph>
-                <Link href={autogiro}>Autogiro.pdf</Link>
+                <Link href={"/#/boendeinformation/autogiro"}>Autogiro</Link>
             </Paragraph>
 
             <Hr />

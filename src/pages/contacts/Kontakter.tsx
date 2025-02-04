@@ -30,19 +30,30 @@ export const Kontakter = () => {
 
             <Paragraph>
                 <b>Logga in</b> på{" "}
-                <Link href={accounting.homepage}>mina sidor</Link> hos{" "}
-                {accounting.name}.
+                <Link href={accounting.hrefs.homepage}>mina sidor</Link> hos{" "}
+                {accounting.name} med BankID.
                 <br />
-                Inloggningsuppgifter hittar du på din avgiftsavi.
-                <br />
-                På sidan hittar du även blankett för <b>Autogiro</b> och utdrag
-                från <b>lägenhetsregistret.</b>
+                På sidan hittar du även anmälan för <b>Autogiro</b>.
+            </Paragraph>
+
+            <Hr />
+
+            <SubHeading>Utdrag ur lägenhetsförteckningen</SubHeading>
+
+            <Paragraph>
+                Medlemmar kan begära ut detta genom att fylla i
+                kontaktformuläret{" "}
+                <Link href={accounting.hrefs.contactUs} target="_blank">
+                    här
+                </Link>
+                .
             </Paragraph>
 
             <Hr />
 
             <SubHeading>Parkeringsplatser och tillstånd utomhus</SubHeading>
 
+            {/* TODO: Update with info on Nabo.se */}
             <Paragraph>
                 <b>Kontakta</b>
                 <br />

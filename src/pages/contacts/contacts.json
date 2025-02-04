@@ -38,19 +38,19 @@
         "email": "kundservice@fastighetsagarna.se"
     },
     "accounting": {
-        "name": "Brf Ekonomen",
+        "name": "Nabo",
         "address": {
             "streetName": "Fredsgatan 13",
             "code": "149 30",
             "city": "Nynäshamn"
         },
-        "phone": [
-            {
-                "number": "08-588 857 40"
-            }
-        ],
-        "email": "info@brfekonomen.se",
-        "homepage": "https://brfekonomen.realportal.nu"
+        "email": "boende@nabo.se",
+        "hrefs": {
+            "homepage": "https://portal.nabo.se/kundportal/login",
+            "contactUs": "https://nabo.se/kontakta-oss/",
+            "andrahandsuthyrning": "https://portal.nabo.se/kundportal/real-estate/member",
+            "maklarservice": "https://maklarservice.nabo.se"
+        }
     },
     "parking": {
         "name": "Aimo Park",

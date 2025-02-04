@@ -1,4 +1,6 @@
 import React from "react";
+import { LinkTo } from "../contacts/contact-card";
+import contacts from "../contacts/contacts.json";
 import {
     Heading,
     Hr,
@@ -6,8 +8,6 @@ import {
     Paragraph,
     SubHeading,
 } from "../page-container";
-import { LinkTo } from "../contacts/contact-card";
-import contacts from "../contacts/contacts.json";
 
 export const Parkering = () => {
     return (
@@ -28,8 +28,9 @@ export const Parkering = () => {
                 tillkommer på platserna med laddningstolpar.
                 <br />
                 <br />
+                {/* TODO: Update with info from Nabo.se */}
                 För information om eventuellt lediga parkeringsplatser, kontakta
-                Brf Ekonomen på{" "}
+                {contacts.accounting.name} på{" "}
                 <LinkTo type={"Mail"}>{contacts.accounting.email}</LinkTo> för
                 mer information eller för att anmäla ert intresse.
             </Paragraph>

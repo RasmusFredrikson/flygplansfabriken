@@ -1,5 +1,7 @@
+import { Link } from "@mui/material";
 import React from "react";
 import { LinkTo } from "../contacts/contact-card";
+import { accounting } from "../contacts/contacts.json";
 import {
     Heading,
     Hr,
@@ -101,31 +103,39 @@ export const Maklarinformation = () => {
             <SubHeading>Ekonomi</SubHeading>
 
             <Paragraph>
-                Vår ekonomiska förvaltare är BRF EKONOMEN I STOCKHOLM AB
+                Vår ekonomiska förvaltare är {accounting.name}
                 <br />
                 De tillhandahåller mäklarbild samt sköter all hantering av
-                överlåtelser, medlemsansökan, pantsättning mm.
+                överlåtelser, medlemsansökan, pantsättning, m.m.
             </Paragraph>
 
             <Hr />
 
-            <SubHeading>
-                Skicka medlemsansökningar, pantsättningar, överlåtelser mm till
-            </SubHeading>
+            <SubHeading>Pantsättningshandlingar</SubHeading>
 
             <Paragraph>
-                Brf Flygplansfabriken
-                <br />
-                ℅ Brf Ekonomen i Stockholm AB
-                <br />
-                Fredsgatan 13
-                <br />
-                149 30 NYNÄSHAMN
+                Pantsättningshandlingar ska skickas till{" "}
+                <LinkTo type={"Mail"}>panter@nabo.se</LinkTo>.
             </Paragraph>
 
-            <LinkTo type={"Mail"}>info@brfekonomen.se</LinkTo>
-            <br />
-            <LinkTo type={"Tel"}>08-588 85 740</LinkTo>
+            <Hr />
+
+            <SubHeading>Mäklarbild och överlåtelseavtal</SubHeading>
+
+            <Paragraph>
+                Mäklarbild samt överlåtelseavtal hanteras genom{" "}
+                <Link target="_blank" href={accounting.hrefs.maklarservice}>
+                    Nabos mäklarservice
+                </Link>
+                .
+                <br />
+                Frågor utöver detta hänvisas till Nabos{" "}
+                <Link href={accounting.hrefs.contactUs} target="_blank">
+                    kontaktformulär
+                </Link>{" "}
+                eller mail till{" "}
+                <LinkTo type={"Mail"}>{accounting.email}</LinkTo>.
+            </Paragraph>
         </PageContainer>
     );
 };

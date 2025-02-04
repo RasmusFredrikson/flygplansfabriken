@@ -1,8 +1,5 @@
 import { Link } from "@mui/material";
 import React from "react";
-import andrahand from "../../assets/andrahand.pdf";
-import { LinkTo } from "../contacts/contact-card";
-import contacts from "../contacts/contacts.json";
 import {
     Heading,
     Hr,
@@ -26,16 +23,17 @@ export const Andrahandsuthyrning = () => {
             <SubHeading>Så här ansöker du</SubHeading>
 
             <Paragraph>
-                För att ansöka om att hyra ut din bostad i andra hand behöver du
-                fylla i{" "}
-                <Link href={andrahand} target="_blank">
-                    ansökningsblankett
-                </Link>
-                .
+                För att ansöka om att hyra ut din bostad i andra hand behöver du{" "}
+                <Link
+                    href={
+                        "https://portal.nabo.se/kundportal/real-estate/member"
+                    }
+                    target="_blank"
+                >
+                    ansöka
+                </Link>{" "}
+                hos Nabo.
                 <br />
-                <br />
-                Blanketten mailas därefter till{" "}
-                <LinkTo type={"Mail"}>{contacts.styrelsen.email}</LinkTo>.
                 <ul>
                     <li>Godkänd uthyrningstid är max ett år.</li>
                     <li>
