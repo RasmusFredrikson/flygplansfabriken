@@ -201,6 +201,13 @@ export const Trivselregler = () => {
                         balkongräcket.
                     </Typography>
                 </li>
+
+                <li>
+                    <Typography variant={"body1"}>
+                        Undvik rökning på balkong/altan då röken lätt kan sprida
+                        sig in i ventilationen hos närliggande grannar.
+                    </Typography>
+                </li>
             </ul>
 
             <Paragraph>
@@ -234,12 +241,29 @@ export const Trivselregler = () => {
             <SubHeading>Sophantering</SubHeading>
 
             <Paragraph>
-                Brännbara hushållssopor slängs i föreningens cylinderformade
-                sopbehållare som är placerat vid parkeringsplatserna på
-                framsidan. Alla boende har ett gemensamt ansvar att hålla god
-                ordning runt sopkärlet. Kärl för källsortering finns på
-                Tellusborgsvägen 53, en liten promenad in i Midsommarkransen.
-                Återvinningscentraler finns i Östberga och Sätra.
+                <ul>
+                    <li>
+                        <b>Brännbara hushållssopor</b> slängs i föreningens
+                        cylinderformade sopbehållare som är placerat vid
+                        parkeringsplatserna på framsidan.
+                    </li>
+                    <li>
+                        Kärl för{" "}
+                        <b>
+                            matavfall, kartong, tidningar, plast, metall, glas,
+                            batterier och elavfall
+                        </b>{" "}
+                        finns framför porten vid cykelställen.
+                    </li>
+                </ul>
+                Se till att noga <b>vika ihop kartonger och tryck ned</b>{" "}
+                kartongen hårt då detta kärl lätt blir överfyllt. Prioritera att
+                återvinna mellan tisdag-fredag, då kartongen töms på tisdagar
+                och fredagar och det ofta är fullt på tisdagar efter helgen.
+                <br />
+                <br />
+                Alla boende har ett gemensamt ansvar att hålla god ordning runt
+                sopkärlet. Återvinningscentraler finns i Östberga och Sätra.
             </Paragraph>
 
             <Hr />
