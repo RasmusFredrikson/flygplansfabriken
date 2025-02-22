@@ -29,8 +29,13 @@ export const Parkering = () => {
                 <br />
                 <br />
                 Hos Nabo under{" "}
-                <Link href={contacts.accounting.hrefs.parkering}>Köer</Link> kan
-                du ställa dig i kö och hitta information om kötid.
+                <Link
+                    target="_blank"
+                    href={contacts.accounting.hrefs.parkering}
+                >
+                    Köer
+                </Link>{" "}
+                kan du ställa dig i kö och hitta information om kötid.
             </Paragraph>
         </PageContainer>
     );

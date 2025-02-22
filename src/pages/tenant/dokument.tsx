@@ -28,7 +28,9 @@ export const Dokument = () => {
             <SubHeading>Stadgar</SubHeading>
 
             <Paragraph>
-                <Link href={stadgar2019}>Stadgar.pdf</Link>
+                <Link target="_blank" href={stadgar2019}>
+                    Stadgar.pdf
+                </Link>
             </Paragraph>
 
             <Hr />
@@ -36,31 +38,45 @@ export const Dokument = () => {
             <SubHeading>Årsredovisningar</SubHeading>
 
             <Paragraph>
-                <Link href={ar2023}>Årsredovisning 2023.pdf</Link>
+                <Link target="_blank" href={ar2023}>
+                    Årsredovisning 2023.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2022}>Årsredovisning 2022.pdf</Link>
+                <Link target="_blank" href={ar2022}>
+                    Årsredovisning 2022.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2021}>Årsredovisning 2021.pdf</Link>
+                <Link target="_blank" href={ar2021}>
+                    Årsredovisning 2021.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2020}>Årsredovisning 2020.pdf</Link>
+                <Link target="_blank" href={ar2020}>
+                    Årsredovisning 2020.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2019}>Årsredovisning 2019.pdf</Link>
+                <Link target="_blank" href={ar2019}>
+                    Årsredovisning 2019.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2018}>Årsredovisning 2018.pdf</Link>
+                <Link target="_blank" href={ar2018}>
+                    Årsredovisning 2018.pdf
+                </Link>
             </Paragraph>
 
             <Paragraph>
-                <Link href={ar2017}>Årsredovisning 2017.pdf</Link>
+                <Link target="_blank" href={ar2017}>
+                    Årsredovisning 2017.pdf
+                </Link>
             </Paragraph>
 
             <Hr />
@@ -68,7 +84,10 @@ export const Dokument = () => {
             <SubHeading>Ansökan andrahandsuthyrning</SubHeading>
 
             <Paragraph>
-                <Link href={accounting.hrefs.andrahandsuthyrning}>
+                <Link
+                    target="_blank"
+                    href={accounting.hrefs.andrahandsuthyrning}
+                >
                     Andrahandsuthyrning
                 </Link>
             </Paragraph>
@@ -88,7 +107,9 @@ export const Dokument = () => {
             </SubHeading>
 
             <Paragraph>
-                <Link href={bostadsandring}>Bostadsändring.pdf</Link>
+                <Link target="_blank" href={bostadsandring}>
+                    Bostadsändring.pdf
+                </Link>
             </Paragraph>
         </PageContainer>
     );

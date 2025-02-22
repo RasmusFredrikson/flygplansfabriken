@@ -49,6 +49,7 @@ export const Felanmalan = () => {
                 <br />
                 Webbsida för felanmälan:{" "}
                 <Link
+                    target="_blank"
                     color={"secondary"}
                     href={contacts.Fastighetsservice.homePage}
                 >
@@ -100,7 +101,10 @@ export const Felanmalan = () => {
                 Fastighetsägarna Service AB.
                 <br />
                 Webbsida för felanmälan:{" "}
-                <Link href={contacts.Fastighetsservice.homePage}>
+                <Link
+                    target="_blank"
+                    href={contacts.Fastighetsservice.homePage}
+                >
                     {contacts.Fastighetsservice.homePage}
                 </Link>
                 <br />

@@ -19,8 +19,11 @@ export const Teknik = () => {
 
             <Paragraph>
                 Bredband 1000/1000 Mbit/s ingår i hyran. Klicka{" "}
-                <Link href={bredband}>här</Link> för mer information om hur du
-                kan komma igång med Bahnhof bredband.
+                <Link target="_blank" href={bredband}>
+                    här
+                </Link>{" "}
+                för mer information om hur du kan komma igång med Bahnhof
+                bredband.
                 <br />
                 <br />
                 IT-delen av skåpet innehåller en inkommande nätverksport avsedd
@@ -33,7 +36,9 @@ export const Teknik = () => {
                 <br />
                 <br />
                 Tv-abonnemang finns att beställa hos{" "}
-                <Link href="https://www.serverado.se">Serverado</Link>
+                <Link target="_blank" href="https://www.serverado.se">
+                    Serverado
+                </Link>
             </Paragraph>
 
             <Hr />

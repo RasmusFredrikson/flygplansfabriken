@@ -30,8 +30,10 @@ export const Kontakter = () => {
 
             <Paragraph>
                 <b>Logga in</b> på{" "}
-                <Link href={accounting.hrefs.homepage}>mina sidor</Link> hos{" "}
-                {accounting.name} med BankID.
+                <Link target="_blank" href={accounting.hrefs.homepage}>
+                    mina sidor
+                </Link>{" "}
+                hos {accounting.name} med BankID.
                 <br />
                 På sidan hittar du även anmälan för <b>Autogiro</b>.
             </Paragraph>
@@ -57,7 +59,13 @@ export const Kontakter = () => {
                 <b>Kontakt</b>
                 <br />
                 Ställ dig i kö hos{" "}
-                <Link href={contacts.accounting.hrefs.parkering}>Nabo</Link>.
+                <Link
+                    target="_blank"
+                    href={contacts.accounting.hrefs.parkering}
+                >
+                    Nabo
+                </Link>
+                .
                 <br />
                 För tillstånd utomhus, kontakta{" "}
                 <LinkTo type={"Mail"}>{accounting.email}</LinkTo>
