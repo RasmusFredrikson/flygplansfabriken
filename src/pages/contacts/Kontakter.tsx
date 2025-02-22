@@ -53,13 +53,14 @@ export const Kontakter = () => {
 
             <SubHeading>Parkeringsplatser och tillstånd utomhus</SubHeading>
 
-            {/* TODO: Update with info on Nabo.se */}
             <Paragraph>
-                <b>Kontakta</b>
+                <b>Kontakt</b>
                 <br />
-                {accounting.name}
+                Ställ dig i kö hos{" "}
+                <Link href={contacts.accounting.hrefs.parkering}>Nabo</Link>.
                 <br />
-                E-post: <LinkTo type={"Mail"}>{accounting.email}</LinkTo>
+                För tillstånd utomhus, kontakta{" "}
+                <LinkTo type={"Mail"}>{accounting.email}</LinkTo>
             </Paragraph>
         </PageContainer>
     );

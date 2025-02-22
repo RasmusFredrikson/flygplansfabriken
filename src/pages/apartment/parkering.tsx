@@ -1,5 +1,5 @@
+import { Link } from "@mui/material";
 import React from "react";
-import { LinkTo } from "../contacts/contact-card";
 import contacts from "../contacts/contacts.json";
 import {
     Heading,
@@ -28,11 +28,9 @@ export const Parkering = () => {
                 tillkommer på platserna med laddningstolpar.
                 <br />
                 <br />
-                {/* TODO: Update with info from Nabo.se */}
-                För information om eventuellt lediga parkeringsplatser, kontakta
-                {contacts.accounting.name} på{" "}
-                <LinkTo type={"Mail"}>{contacts.accounting.email}</LinkTo> för
-                mer information eller för att anmäla ert intresse.
+                Hos Nabo under{" "}
+                <Link href={contacts.accounting.hrefs.parkering}>Köer</Link> kan
+                du ställa dig i kö och hitta information om kötid.
             </Paragraph>
         </PageContainer>
     );

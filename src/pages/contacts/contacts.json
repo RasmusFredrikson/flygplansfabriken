@@ -49,7 +49,8 @@
             "homepage": "https://portal.nabo.se/kundportal/login",
             "contactUs": "https://nabo.se/kontakta-oss/",
             "andrahandsuthyrning": "https://portal.nabo.se/kundportal/real-estate/member",
-            "maklarservice": "https://maklarservice.nabo.se"
+            "maklarservice": "https://maklarservice.nabo.se",
+            "parkering": "https://portal.nabo.se/kundportal/queues"
         }
     },
     "parking": {
