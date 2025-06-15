@@ -24,8 +24,10 @@ export const Parkering = () => {
 
             <Paragraph>
                 Parkeringsplatserna utomhus uthyres av föreningen till en
-                kostnad av fn. <b>800 kr/mån</b>. Ett tillägg på 400kr för elen
-                tillkommer på platserna med laddningstolpar.
+                kostnad av fn. <b>800 kr/mån</b>. Ett tillägg på <b>600 kr</b>{" "}
+                för elen tillkommer på platserna med laddningstolpar. Platser
+                med laddstolpar är endast avsedda för elbilar, laddhybrider kan
+                inte nyttja dessa platser.
                 <br />
                 <br />
                 Hos Nabo under{" "}
