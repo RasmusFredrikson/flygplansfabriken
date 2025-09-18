@@ -27,7 +27,7 @@ export const Medlemmar = () => {
         {
             img: charalamposImg,
             name: "Charalampos Antonopoulos",
-            position: "Suppleant",
+            position: "Styrelseledamot",
         },
     ];
 
