@@ -1,4 +1,4 @@
-import { Link } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import React from "react";
 import { LinkTo } from "../contacts/contact-card";
 import { accounting } from "../contacts/contacts.json";
@@ -114,7 +114,18 @@ export const Maklarinformation = () => {
             <SubHeading>Pantsättningshandlingar</SubHeading>
 
             <Paragraph>
-                Pantsättningshandlingar ska skickas till{" "}
+                Pantsättningshandlingar ska postas till:
+                <Box marginLeft={"10px"} marginTop={"10px"}>
+                    <b>Brf Flygplansfabriken</b>
+                    <br />
+                    Nabo 110192, Box 843
+                    <br />
+                    851 23 Sundsvall
+                </Box>
+            </Paragraph>
+
+            <Paragraph>
+                Vid eventuella frågor om pantnoteringar, vänligen kontakta:{" "}
                 <LinkTo type={"Mail"}>panter@nabo.se</LinkTo>.
             </Paragraph>
 
