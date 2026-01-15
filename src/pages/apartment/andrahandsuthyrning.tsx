@@ -32,7 +32,7 @@ export const Andrahandsuthyrning = () => {
                 >
                     ansöka
                 </Link>{" "}
-                hos Nabo.
+                via Nabo.
                 <br />
                 <ul>
                     <li>Godkänd uthyrningstid är max ett år.</li>
@@ -56,8 +56,6 @@ export const Andrahandsuthyrning = () => {
                 den period du ansökt om att hyra ut i andra hand.
                 <br />
                 <br />
-                Observera att du fortfarande måste ansöka hos styrelsen om att
-                hyra ut din lägenhet i enlighet med föreningens stadgar.
                 Andrahandsuthyrning utan tillstånd är ett brott mot föreningens
                 stadgar och kan leda till att nyttjanderätten för lägenheten
                 förverkas.
