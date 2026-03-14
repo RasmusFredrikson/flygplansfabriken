@@ -8,6 +8,7 @@ import ar2021 from "../../assets/2021.pdf";
 import ar2022 from "../../assets/2022.pdf";
 import ar2023 from "../../assets/2023.pdf";
 import ar2024 from "../../assets/2024.pdf";
+import ar2025 from "../../assets/2025.pdf";
 import bostadsandring from "../../assets/bostadsandring.pdf";
 import stadgar2019 from "../../assets/stadgar2019.pdf";
 import { accounting } from "../contacts/contacts.json";
@@ -37,6 +38,12 @@ export const Dokument = () => {
             <Hr />
 
             <SubHeading>Årsredovisningar</SubHeading>
+
+            <Paragraph>
+                <Link target="_blank" href={ar2025}>
+                    Årsredovisning 2025.pdf
+                </Link>
+            </Paragraph>
 
             <Paragraph>
                 <Link target="_blank" href={ar2024}>
