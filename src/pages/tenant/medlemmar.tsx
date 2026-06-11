@@ -8,26 +8,36 @@ import {
     Typography,
 } from "@mui/material";
 import React from "react";
-import albinImg from "../../assets/board-members/albin.webp";
+import viktorImg from "../../assets/board-members/viktor.jpg";
 import charalamposImg from "../../assets/board-members/charalampos.webp";
 import kandanImg from "../../assets/board-members/kandan.webp";
-import rasmusImg from "../../assets/board-members/rasmus.webp";
+import kristianImg from "../../assets/board-members/kristian.png";
+import admassImg from "../../assets/board-members/admass.png";
 import contacts from "../contacts/contacts.json";
 import { Heading, PageContainer, SubHeading } from "../page-container";
 
 export const Medlemmar = () => {
     const members = [
         { img: kandanImg, name: "Kandan Bakhtiar Ali", position: "Ordförande" },
-        { img: albinImg, name: "Albin Ullmark", position: "Styrelseledamot" },
-        {
-            img: rasmusImg,
-            name: "Rasmus Fredrikson",
-            position: "Styrelseledamot",
-        },
         {
             img: charalamposImg,
             name: "Charalampos Antonopoulos",
             position: "Styrelseledamot",
+        },
+        {
+            img: viktorImg,
+            name: "Viktor Elofsson",
+            position: "Styrelseledamot",
+        },
+        {
+            img: kristianImg,
+            name: "Kristian Andersson",
+            position: "Styrelseledamot",
+        },
+        {
+            img: admassImg,
+            name: "Admass Beyeen",
+            position: "Suppleant",
         },
     ];
 
@@ -82,13 +92,26 @@ export const Medlemmar = () => {
                             xs={12}
                             style={{ marginTop: "10px" }}
                         >
-                            <img
-                                style={{ filter: "grayscale(100%)" }}
-                                src={member.img}
-                                width={"200px"}
-                                alt={member.name}
-                            />
-                            <div>{member.name}</div>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <div
+                                    style={{
+                                        backgroundImage: `url(${member.img})`,
+                                        backgroundPosition: "center",
+                                        backgroundSize: "cover",
+                                        width: "200px",
+                                        height: "200px",
+                                        aspectRatio: "1",
+                                        filter: "grayscale(100%)",
+                                    }}
+                                ></div>
+                                <div>{member.name}</div>
+                            </div>
                         </Grid>
                     ))}
             </Grid>
